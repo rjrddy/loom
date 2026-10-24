@@ -1,0 +1,10 @@
+services:
+  loom:
+    build: .
+    environment:
+      LOOM_EDIT_TOKEN: ${LOOM_EDIT_TOKEN:-synthetic-local-editor-key-0001}
+      LOOM_VIEW_TOKEN: ${LOOM_VIEW_TOKEN:-synthetic-local-viewer-key-0001}
+    ports: ['127.0.0.1:8097:8097']
+    volumes: [workspace:/app/.cache]
+volumes:
+  workspace:

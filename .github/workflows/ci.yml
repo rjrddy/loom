@@ -1,0 +1,29 @@
+name: Loom gates
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: make setup build lint test scan
+      - run: LOOM_QUICK=1 make bench
+      - run: docker build -t loom:test .
+      - run: node dist-node/scripts/container_smoke.js
+      - run: python -m pip install -r requirements-browser.txt
+      - run: ruff check scripts && ruff format --check scripts
+      - run: python -m pip_audit -r requirements-browser.txt --progress-spinner off
+      - run: python -m playwright install --with-deps chromium ffmpeg
+      - run: python scripts/review.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: loom-runtime-evidence
+          path: docs/results/

@@ -1,0 +1,870 @@
+npm run lint
+
+> loom-workspace@0.1.0 lint
+> tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.web.json && prettier --check src scripts tests *.json *.ts index.html
+
+Checking formatting...
+All matched files use Prettier code style!
+npm test
+
+> loom-workspace@0.1.0 test
+> node --test dist-node/tests/*.test.js
+
+{"trials":40,"replicas":4,"operations":20000,"initial_delivery_drops":38066,"converged":40,"scope":"seeded finite trials; reordered/duplicated/dropped initial deliveries, eventual full anti-entropy; not permanent-loss convergence"}
+(node:75494) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ sequence preserves delete-before-insert and descendants through tombstones (0.982292ms)
+✔ concurrent siblings and per-field LWW converge in either order (0.795875ms)
+✔ malformed/cyclic/future-anchor/conflicting IDs fail closed (0.312ms)
+✔ seeded partition/reorder/drop/duplicate campaign converges after healing (715.51225ms)
+✔ SQLite dedupe, exclusive writer fencing and restart persistence (2.770417ms)
+✔ focused draft edits preserve unseen remote insertions (0.184958ms)
+{"sigkill_restart":"pass","parser_canary":"excluded"}
+✔ real SIGKILL restart preserves acknowledged data; parser/auth logs omit canary and tokens (165.550042ms)
+(node:75496) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"ready"}
+{"event":"rejected","code":"id_collision"}
+{"event":"rejected","code":"read_only"}
+{"event":"rejected","code":"actor_mismatch"}
+{"event":"rejected","code":"invalid_cursor"}
+{"event":"rejected","code":"hello_rejected"}
+{"caught":["id_collision","read_only","actor_mismatch","invalid_cursor","hello_rejected"],"duplicates":1,"offline_merge":"pass"}
+{"event":"ready"}
+✔ actual WebSockets: concurrent offline union, dedupe, actor/auth/readonly and cursor gates (62.228458ms)
+{"half_open_socket":"terminated","test_heartbeat_interval_ms":40}
+✔ heartbeat terminates a socket that stops answering protocol pings (96.057083ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 764.570167
+npm run bench
+
+> loom-workspace@0.1.0 bench
+> node dist-node/scripts/bench.js
+
+(node:75512) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"ready"}
+{
+  "environment": {
+    "node": "v23.6.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M2 Pro",
+    "logical_cpus": 10,
+    "ram_bytes": 17179869184
+  },
+  "convergence": {
+    "trials": 80,
+    "operations_per_trial": 2000,
+    "replicas": 4,
+    "operations": 160000,
+    "initial_delivery_drops": 306748,
+    "converged": 80,
+    "trial_results": [
+      {
+        "seed": 1,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "d513e44b4edac36dfba42942c4159b8cdd2b922099e82170b17f520e20126450"
+      },
+      {
+        "seed": 2,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "88ea2fb058572fbb6329ef49e4afbfa336c2a5fc402af9dbb28d48d9e8fa2560"
+      },
+      {
+        "seed": 3,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "20458db6e5ebc3ac72596fe704adca516180f91942a42128e6156050f95d9576"
+      },
+      {
+        "seed": 4,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "7d48f5fbaff674dc883c9dfd3f90ee3fe4cdc537c8e9c87d80ece4c957857454"
+      },
+      {
+        "seed": 5,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "b66a96f49bf12b72d9432274f8207d41bbd2a8dc38e1cb3b1fd3db9afc57747b"
+      },
+      {
+        "seed": 6,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "859141bb42cdfb87a027c3e8b93a59968d9b60a35bda6860771fbd80ca413f3c"
+      },
+      {
+        "seed": 7,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "1cd1ebf185e3370610fe0772d67387cbff3b5ab393e38bbcc728acb8803d378d"
+      },
+      {
+        "seed": 8,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "0807b18c7a537baa9fbf334b570347bda5f55396b93c9cd9b73c6cf02a6e76cc"
+      },
+      {
+        "seed": 9,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "00cd48e4be25645c715df4bf29285ff09cb638de599d6ee800226ecdf63bde0f"
+      },
+      {
+        "seed": 10,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "993234e44a0720bb0f77d11c94473f86bfbd8f29f2cfe76a04a2e59aeff69215"
+      },
+      {
+        "seed": 11,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "e25f83d4c68f5c39fd8181a1f879a6964e1b380377f9b5917a8fe341f7137152"
+      },
+      {
+        "seed": 12,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "6cc11ff9196d646c052f2e86c50a1f58da7751c126745cb9644304a3029d14dc"
+      },
+      {
+        "seed": 13,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "f61f01cc78bdbf43410edc0c8f43cd94e1d665cac7c91e19bb1fd69c8ee51f53"
+      },
+      {
+        "seed": 14,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "170eb8c431a993986911a841b9c157aef560a6d425439dd7d8ba3993fcea7365"
+      },
+      {
+        "seed": 15,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "cb3ddf504951a27b7b6ccae5370eb7fad53cb708d7cac04a36dc5cd4d257ffaa"
+      },
+      {
+        "seed": 16,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "75e67d6fcd367ad8c9e09ef79bc7da3474336a6ab5cf8ccb6006c052c6137975"
+      },
+      {
+        "seed": 17,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "4ac88dac3e50527c46d0f98ff99f11e5a3cec37ddc9201276bd646615a8ed19b"
+      },
+      {
+        "seed": 18,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "413ef1e1358016a4f9bbed7482909e1442d571ed3933c3a25acc6956e4458d20"
+      },
+      {
+        "seed": 19,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "85560790597c97a080d58e024420592b617286fb89d38d5ae2151c28fd8caea6"
+      },
+      {
+        "seed": 20,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "6ef4c4428640a2d6ad8d1062116e9547d0337e07e09fea681b5dd62fe320e781"
+      },
+      {
+        "seed": 21,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "00608d82a24a93047d911ac063af5252c4d6d8970d55bf89380c539b2d4c94e8"
+      },
+      {
+        "seed": 22,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "80b38be1fbfad612a6f56739c7c296d42859d163d05ec260b582e3c2d0b5d8a9"
+      },
+      {
+        "seed": 23,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "3ffe61e95472040815a92520e3d0175f40689be0ece8f8660c824e4f10d7af97"
+      },
+      {
+        "seed": 24,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "f6be53edbf8593ff7da9a3f316c747d77f9a9d595873716ef954f6141227ddd6"
+      },
+      {
+        "seed": 25,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "9e9eea5bd0e2d474dcc05eb8b650ee8ebe12d00f5d630745d5ba520f6b75a31d"
+      },
+      {
+        "seed": 26,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "004bcfeecc49fba3bf07c38c7bb7b4351a06b7f457cc5cc830b8cc16ca088a4b"
+      },
+      {
+        "seed": 27,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "67410d1f419bc215ec7a468dabd74b2423607f1deb068e40e158d0a72a88386f"
+      },
+      {
+        "seed": 28,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "633974ec849010c87c1c2ede52bb42575ff87bf7f98ca1403b6bb00aa204fabb"
+      },
+      {
+        "seed": 29,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "3165dd0453739b857e3c2a919fabe871be28a163656c8f9d36dc7f9c2efe2b06"
+      },
+      {
+        "seed": 30,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "b764772f949cd05161b352455f0fc5c3265ebedeb162f88fcd2d4d44e06945c8"
+      },
+      {
+        "seed": 31,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "803d5d4f36dc94ced8f3b5585c49b163e864457a27a99c119b2bfa40193cd0e5"
+      },
+      {
+        "seed": 32,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "4d43322dbb91ce78fa04928268a28ba456d9adf134b0714497a78756f0f9a47b"
+      },
+      {
+        "seed": 33,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "ff02ee47689e92635b2e65180632e4aba3943e28daa5709a74c013203c24943c"
+      },
+      {
+        "seed": 34,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "55321b30e97a158391eaa71f1100804112be89e26a9ad27a488378e05f4dbc88"
+      },
+      {
+        "seed": 35,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "2909ed4fbdb0e45e199e2845fb2a39ad3659e9c027924922bb4d55d7ce031b1b"
+      },
+      {
+        "seed": 36,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "d857918ab1179eff3a255fa7b9b50b97f63fcf8772ebe9b3d92b8e2f0cc9029e"
+      },
+      {
+        "seed": 37,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "13f2417c006886c1b75e61d6a9185f1abf1a093371fe617698732cb52caf976b"
+      },
+      {
+        "seed": 38,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "9949439d973d0b066f0eec8a9412654be4890e72538e209b6c70d6bc836efb52"
+      },
+      {
+        "seed": 39,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "7ea55e63847c2dd51ed179af866d91b575d99309b94da289b5546c48443ab944"
+      },
+      {
+        "seed": 40,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "ca86a4173ec180f1bf8f99a2184ed683b0f477a5ba32196b9a09eb0e41569206"
+      },
+      {
+        "seed": 41,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "e24a4e6e3b930eefa47045db16147661055bc33d8c273b62463e260f3825e410"
+      },
+      {
+        "seed": 42,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "966acb07386badded036eeef5d82708ea3dc602aaa75afb48792c361d8b5c490"
+      },
+      {
+        "seed": 43,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "242033c8287abd4a00d84083f55c214ea6318937fcbaa83c343ec0530ac79321"
+      },
+      {
+        "seed": 44,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "29721b64fbc5c672f797004d45978d16963c9c7b551f1a1c293f4b31f8ab8bcb"
+      },
+      {
+        "seed": 45,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "a6c536d71db23fb6cce9e094792b101547a692607cd0d187241331621ed4fdf6"
+      },
+      {
+        "seed": 46,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "e18851a1f9fa0f0c41a2e3925061aecdd96b2d560d0189e0edfa86a2261a141e"
+      },
+      {
+        "seed": 47,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "43a429823d260020bd0e19130acedcc537f99e64a8773d1ceaf119356e436f3b"
+      },
+      {
+        "seed": 48,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "7a99acee53b30d3e85d623174c2cb112cec8c347c2dbd71ac2dbeb67cb18cb17"
+      },
+      {
+        "seed": 49,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "bf9b9737d36bd46cde19082b14134d4dcce1080575874d062ed3ec14710a6003"
+      },
+      {
+        "seed": 50,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "09f7bc022f38cfb5a2c2145ffbb92991da57e197a59174dbf5a91432d34bf832"
+      },
+      {
+        "seed": 51,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "f0ca4efd49f7540b8b4d56aaf3364407d604fd095a446bb927bb9aba57ce913f"
+      },
+      {
+        "seed": 52,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "d0b664179af8b2ce76ac5d739259d2661a17efd05e40ab4c2448678296ec4f7c"
+      },
+      {
+        "seed": 53,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "84a268029d7baae72311aeffbee13b7bb57e360c18cd543bce0161ff7b00d692"
+      },
+      {
+        "seed": 54,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "bb3deae51723b7a6a3d3433b47bf6cc787a9d2c48d517782108ee30d1b3f4d2d"
+      },
+      {
+        "seed": 55,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "2f54ab8a97a04c466df87d34f41f1c0053fff64a4be259f9c7821354d731fa0c"
+      },
+      {
+        "seed": 56,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "02b32419a33aa31e03e309b2f735c8c72cf0802eef3507e4b4785473af4d839e"
+      },
+      {
+        "seed": 57,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "012ec6b7f8baabaaee6bdeb32e69026d0061ab3c930ec9deccc37a54be912613"
+      },
+      {
+        "seed": 58,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "099ecf6d5f3b3386a29f3561814ea94e6e26271a917e68f395d368f23e053b4e"
+      },
+      {
+        "seed": 59,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "8dae890022856cae54e119c15fff135427af431817d62b2725d61dacf9bbc0be"
+      },
+      {
+        "seed": 60,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "fe90f807a3f29b0a3cccbbf537a4f064d2fa092d9c8ccaf62962f0ba662474ed"
+      },
+      {
+        "seed": 61,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "9e2efeaa93b47543a5405044b28e1dd208767f8f3b629f4bc3841c2818b98f6a"
+      },
+      {
+        "seed": 62,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "50aac3795aa8a00eaaf6ede0d20ad26cc339cbcc3ffa1b93258924daca809b57"
+      },
+      {
+        "seed": 63,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "d2f75a4e96906cf2f7cf48007dd765a299d5fa48dacc35cf116d876b2051bb69"
+      },
+      {
+        "seed": 64,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "eace29ab32d6975f1b5b7dffde08fab90d5e642b139356b06994e7207b333e1f"
+      },
+      {
+        "seed": 65,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "fd9552691f57430d7318f2b9e21a5030c34d79d19c8faeb3feca79acf891def5"
+      },
+      {
+        "seed": 66,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "75728685e09d5732708e80b96e43c5ed91655bf893c8388be902ba07b779d9f7"
+      },
+      {
+        "seed": 67,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "a6b2e6c34518bfab934ecc8ddf69d386432ff2c1cf780246562695769aff23e0"
+      },
+      {
+        "seed": 68,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "e885de93dd9bf71e752cd34df74ad91bdc8f41a45255d00493a98a9dcf43fe3e"
+      },
+      {
+        "seed": 69,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "d5c2a95427536f772bf05b5eb8c66a3fca7bec3fd586ff2004b4d0b81cb5b512"
+      },
+      {
+        "seed": 70,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "2c42dddb7535ce6493eb19a45e5915b9e2049d3377028ce976fe5b9232bcf89b"
+      },
+      {
+        "seed": 71,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "32b6d21cbfb65d8ade35f448f7482a594f1f6d29a94fccbd39f03596d0846ca5"
+      },
+      {
+        "seed": 72,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "fa78ace88c001487910fd19b02cef200078e091d76fb91402b206022c6b9a65a"
+      },
+      {
+        "seed": 73,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "d043c7952664c1615585fe32188dee2b315af6404c784782265f5332ace4b8bf"
+      },
+      {
+        "seed": 74,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "a93b49ea851c150305961a06e56dbbc29df30de265032dc00bc3022bf5272015"
+      },
+      {
+        "seed": 75,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "37c62a7cba13c937fbbb890d5ef31d8cb1951f9c4f104a10599269578ad0daec"
+      },
+      {
+        "seed": 76,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "f059196b8939aff5d2261dc282be0cd88f3b92b2e71c8412b5d0de04f6ba9b90"
+      },
+      {
+        "seed": 77,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "98a82b327172596abe03a5cac383ec09d94777724a435eacc4dcd9451a74cef2"
+      },
+      {
+        "seed": 78,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "7cb2f0e3ae14c67191d07c214afb1ea3ee38d882fb88498a1c35c7b50b6992de"
+      },
+      {
+        "seed": 79,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "dedfbd460c657a2a3c1dfedd94187a0e2690bf78583164eb6fd1f68a9d186613"
+      },
+      {
+        "seed": 80,
+        "operations": 2000,
+        "converged": true,
+        "union_sha256": "16754109e0595eda9e214042460bae5a11152be055b8994b2115265dde6fb0a8"
+      }
+    ],
+    "elapsed_ms": 12236.640459,
+    "scope": "seeded finite campaign; initial reordering, duplication, drops/partitions; eventual full anti-entropy and distinct actors required; not a proof under permanent loss"
+  },
+  "propagation": {
+    "samples": 300,
+    "clients": 3,
+    "p50_ms": 2.3842920000006416,
+    "p99_ms": 5.386749999997846,
+    "min_ms": 1.119249999999738,
+    "max_ms": 6.677290999999968,
+    "raw_ms": [
+      2.789708000000246,
+      2.824791000000914,
+      2.8750419999996666,
+      2.9119580000005953,
+      1.70404199999939,
+      2.8381659999995463,
+      2.966833000000406,
+      2.4537080000009155,
+      1.6658750000005966,
+      2.8258329999989655,
+      2.849500000000262,
+      2.8245420000002923,
+      2.845540999998775,
+      1.5547090000000026,
+      2.859999999998763,
+      2.8133749999997235,
+      2.8398329999999987,
+      1.5501249999997526,
+      2.820499999999811,
+      2.859833999998955,
+      2.807334000000992,
+      2.840916000001016,
+      2.8512080000000424,
+      1.5910000000003492,
+      2.8597919999992882,
+      2.889791999999943,
+      2.8760830000010174,
+      2.8393340000002354,
+      4.346000000001368,
+      2.8439159999998083,
+      2.8959169999998267,
+      3.1738750000004075,
+      2.917041999999128,
+      2.8695840000000317,
+      2.8301250000004075,
+      1.5935420000005251,
+      2.8679580000007263,
+      2.8251669999990554,
+      2.8602090000003955,
+      2.8492089999999735,
+      3.1187079999999696,
+      2.8685829999994894,
+      1.6306249999997817,
+      2.8936670000002778,
+      2.842957999999271,
+      2.8684170000015,
+      2.871541000000434,
+      2.8789580000011483,
+      1.5900829999991402,
+      2.8532090000007884,
+      2.88720899999862,
+      2.8965420000004087,
+      2.8727079999989655,
+      2.9008750000011787,
+      1.6327079999991838,
+      2.9116250000006403,
+      2.8702919999996084,
+      2.875625000000582,
+      2.9090829999986454,
+      2.861124999999447,
+      6.018667000000278,
+      4.989583999999013,
+      4.681541999998444,
+      6.677290999999968,
+      2.7582079999992857,
+      2.127375000000029,
+      2.5270409999993717,
+      2.54754099999991,
+      2.801292000000103,
+      2.1586669999996957,
+      3.1277499999996508,
+      2.7527090000003227,
+      2.5516659999993863,
+      2.1743750000005093,
+      2.059124999999767,
+      1.9657080000015412,
+      1.8612909999992553,
+      2.004832999999053,
+      1.7574580000000424,
+      2.998290999999881,
+      2.3955409999998665,
+      1.771083000001454,
+      1.6765420000010636,
+      2.9412499999998545,
+      3.0884580000001733,
+      3.0015000000003056,
+      2.8948330000002898,
+      3.0165410000008706,
+      2.9156659999989643,
+      2.95891599999959,
+      2.9933750000000146,
+      2.953625000000102,
+      2.87054199999875,
+      3.2426250000007713,
+      3.1118329999990237,
+      3.1412919999984297,
+      1.8833749999994325,
+      2.030708999998751,
+      1.903041999999914,
+      3.078292000000147,
+      1.9197080000012647,
+      3.109291000000667,
+      2.128458999999566,
+      4.151625000000422,
+      1.8591250000008586,
+      1.8477080000011483,
+      1.7839170000006561,
+      3.0881250000002183,
+      1.8870829999996204,
+      1.974833000000217,
+      1.8905410000006668,
+      3.324540999999954,
+      2.6569999999992433,
+      2.0600000000013097,
+      2.104583000000275,
+      1.919040999999197,
+      1.9329999999990832,
+      2.0910000000003492,
+      2.1280420000002778,
+      2.0698339999999007,
+      5.41070800000125,
+      4.227291999999579,
+      2.684832999999344,
+      4.28033300000061,
+      2.563624999998865,
+      2.3320000000003347,
+      3.5720409999994445,
+      2.2376249999997526,
+      2.2961249999989377,
+      1.9854159999995318,
+      3.3704579999994166,
+      3.088040999999066,
+      3.0721660000017437,
+      2.6683329999996204,
+      2.2793750000000728,
+      2.208666999998968,
+      2.843124999999418,
+      3.3043330000000424,
+      3.122584000000643,
+      2.000500000000102,
+      2.296875,
+      2.245999999999185,
+      3.1252910000002885,
+      2.4977920000001177,
+      1.3082919999997102,
+      3.339584000001196,
+      2.146875000000364,
+      2.0699170000007143,
+      2.1984169999996084,
+      2.1187079999999696,
+      2.409665999999561,
+      2.617082999999184,
+      2.257459000000381,
+      2.6059580000001006,
+      2.3086250000014843,
+      2.157333999999537,
+      2.2937499999989086,
+      2.236750000000029,
+      2.318875000000844,
+      2.2667920000003505,
+      2.0987499999991996,
+      2.0768329999991693,
+      3.3758749999997235,
+      2.3189170000005106,
+      2.0849579999994603,
+      2.0882910000000265,
+      2.97979099999975,
+      3.0137500000000728,
+      2.587916000000405,
+      2.4739580000004935,
+      2.2569579999999405,
+      2.1189159999994445,
+      2.1370000000006257,
+      2.2292919999999867,
+      2.1955419999994774,
+      2.7308329999996204,
+      2.295791000000463,
+      2.0912919999991573,
+      2.062332999999853,
+      2.060166000001118,
+      3.893458999998984,
+      2.4417090000006283,
+      3.494416999999885,
+      1.5239590000001044,
+      2.3842920000006416,
+      1.7828330000011192,
+      2.1449160000011034,
+      2.1548749999983556,
+      2.201082999999926,
+      2.2961250000007567,
+      3.1316249999999854,
+      3.2086660000004485,
+      2.168374999999287,
+      2.471083999998882,
+      2.28637499999968,
+      2.2220830000005662,
+      2.089208999999755,
+      2.1650840000002063,
+      2.4859579999993002,
+      1.5083340000001044,
+      2.266417000000729,
+      2.3627079999987473,
+      2.519291999999041,
+      2.1284169999998994,
+      2.1905420000002778,
+      2.052292000000307,
+      2.106999999999971,
+      2.2041669999998703,
+      2.4692079999986163,
+      2.175666999999521,
+      2.1286250000011933,
+      1.119249999999738,
+      3.419666000001598,
+      2.4809169999989535,
+      2.311209000001327,
+      2.112375000000611,
+      2.2964579999988928,
+      2.258416999999099,
+      2.2979170000016893,
+      2.258458000000246,
+      2.2997079999986454,
+      2.6445830000011483,
+      2.166417000000365,
+      2.1627079999998386,
+      3.4432080000005953,
+      2.366041999999652,
+      2.0939999999991414,
+      3.3392499999990832,
+      2.2197919999998703,
+      2.1702079999995476,
+      2.205041999999594,
+      2.537499999998545,
+      2.180167000000438,
+      2.1263749999998254,
+      2.292124999999942,
+      2.4062079999985144,
+      2.371166999999332,
+      3.5176250000004075,
+      2.635792000000947,
+      2.3892500000001746,
+      5.386749999997846,
+      2.229624999999942,
+      2.475791000000754,
+      2.5979999999981374,
+      2.0475839999999152,
+      2.110000000000582,
+      2.366582999999082,
+      2.646082999999635,
+      1.2362500000017462,
+      2.385416000000987,
+      2.407999999999447,
+      2.5177499999990687,
+      2.4043749999982538,
+      2.404500000000553,
+      2.178125000002183,
+      2.323832999998558,
+      2.7428749999999127,
+      3.7842080000009446,
+      2.104125000001659,
+      1.980374999999185,
+      1.9245829999999842,
+      1.8389589999969758,
+      1.8554590000021562,
+      1.7598330000000715,
+      3.1670000000012806,
+      2.088833000001614,
+      1.9585000000006403,
+      2.203750000000582,
+      2.3567499999990105,
+      2.4770410000019183,
+      2.0689170000005106,
+      2.173416999998153,
+      1.9314999999987776,
+      2.5181249999986903,
+      2.35504199999923,
+      2.193250000000262,
+      2.167042000000947,
+      3.4364999999997963,
+      2.1465419999985897,
+      2.047167000000627,
+      2.0273330000018177,
+      2.166625000001659,
+      2.1421250000021246,
+      3.4412499999998545,
+      2.663541999998415,
+      2.6037499999983993,
+      2.2755419999994047,
+      2.276499999999942,
+      2.173500000000786,
+      2.086875000000873,
+      4.216541999998299,
+      2.5622910000020056,
+      1.8214159999988624,
+      1.8820840000007593,
+      3.148916999998619,
+      4.296666999998706,
+      1.2255829999994603,
+      3.2415409999994154,
+      2.2653749999990396,
+      2.1003749999981665
+    ],
+    "scope": "actual loopback WebSocket send → both other Node clients applied; sequential offers; SQLite FULL commit before broadcast; 2ms polling resolution; not internet or browser latency"
+  },
+  "human_collaboration_benefit": "not measured"
+}
+node dist-node/scripts/render_readme.js
+Generated README.md exclusively from retained benchmark.json
+npm audit --audit-level=low
+found 0 vulnerabilities

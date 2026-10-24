@@ -1,3 +1,4 @@
+import { WebSocket } from "ws";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { once } from "node:events";
@@ -79,6 +80,42 @@ test("actual WebSockets: concurrent offline union, dedupe, actor/auth/readonly a
     );
   } finally {
     for (const c of clients) c.close();
+    await app.close();
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test("heartbeat terminates a socket that stops answering protocol pings", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "loom-heartbeat-"));
+  const app = start({
+    port: 0,
+    db: join(dir, "db"),
+    editToken: "local-edit",
+    viewToken: "local-view",
+    heartbeatMs: 40,
+  });
+  let socket: WebSocket | null = null;
+  try {
+    await once(app.http, "listening");
+    const port = (app.http.address() as { port: number }).port;
+    const ws = new WebSocket(`ws://127.0.0.1:${port}/sync`, {
+      autoPong: false,
+    });
+    socket = ws;
+    await once(ws, "open");
+    ws.send(
+      JSON.stringify({ type: "hello", actor: "no-pong", token: "local-edit" }),
+    );
+    await once(ws, "close");
+    assert.equal(ws.readyState, WebSocket.CLOSED);
+    console.log(
+      JSON.stringify({
+        half_open_socket: "terminated",
+        test_heartbeat_interval_ms: 40,
+      }),
+    );
+  } finally {
+    socket?.terminate();
     await app.close();
     rmSync(dir, { recursive: true, force: true });
   }

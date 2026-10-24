@@ -1,0 +1,36 @@
+
+> loom-workspace@0.1.0 test
+> node --test dist-node/tests/*.test.js
+
+{"trials":40,"replicas":4,"operations":20000,"initial_delivery_drops":38066,"converged":40,"scope":"seeded finite trials; reordered/duplicated/dropped initial deliveries, eventual full anti-entropy; not permanent-loss convergence"}
+(node:73003) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ sequence preserves delete-before-insert and descendants through tombstones (1.080583ms)
+✔ concurrent siblings and per-field LWW converge in either order (1.009542ms)
+✔ malformed/cyclic/future-anchor/conflicting IDs fail closed (0.31125ms)
+✔ seeded partition/reorder/drop/duplicate campaign converges after healing (733.292ms)
+✔ SQLite dedupe, exclusive writer fencing and restart persistence (2.492042ms)
+✔ focused draft edits preserve unseen remote insertions (0.21125ms)
+{"sigkill_restart":"pass","parser_canary":"excluded"}
+✔ real SIGKILL restart preserves acknowledged data; parser/auth logs omit canary and tokens (175.722875ms)
+(node:73005) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"ready"}
+{"event":"rejected","code":"id_collision"}
+{"event":"rejected","code":"read_only"}
+{"event":"rejected","code":"actor_mismatch"}
+{"event":"rejected","code":"invalid_cursor"}
+{"event":"rejected","code":"hello_rejected"}
+{"caught":["id_collision","read_only","actor_mismatch","invalid_cursor","hello_rejected"],"duplicates":1,"offline_merge":"pass"}
+{"event":"ready"}
+✔ actual WebSockets: concurrent offline union, dedupe, actor/auth/readonly and cursor gates (62.756792ms)
+{"half_open_socket":"terminated","test_heartbeat_interval_ms":40}
+✔ heartbeat terminates a socket that stops answering protocol pings (93.702417ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 783.900084

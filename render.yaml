@@ -1,0 +1,12 @@
+# Prepared only. Free ephemeral disk cannot retain the workspace across recreation.
+services:
+  - type: web
+    name: loom-workspace
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: LOOM_EDIT_TOKEN
+        generateValue: true
+      - key: LOOM_VIEW_TOKEN
+        generateValue: true

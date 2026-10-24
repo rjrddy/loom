@@ -828,3 +828,148 @@ footer small {
     min-height: 220px;
   }
 }
+.proof-totals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #d3d4c5;
+  border-bottom: 1px solid #d3d4c5;
+  margin: 35px 0;
+}
+.proof-totals > div {
+  padding: 26px 24px 24px 0;
+}
+.proof-totals > div + div {
+  border-left: 1px solid #d3d4c5;
+  padding-left: 24px;
+}
+.proof-totals span {
+  font: 9px monospace;
+  letter-spacing: 1px;
+  color: #838775;
+}
+.proof-totals strong {
+  display: block;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-top: 20px;
+}
+.proof-totals strong small {
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  color: #8b8f7c;
+}
+.proof-totals .not-measured {
+  font:
+    italic 29px Georgia,
+    serif;
+  margin-top: 25px;
+  color: #858a70;
+  letter-spacing: -1px;
+}
+.proof-totals p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #7e8371;
+}
+.proof-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 20px 0;
+}
+.proof-body h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.proof-body h2 em {
+  font-family: Georgia, serif;
+  color: #858b62;
+}
+.trial-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  margin: 28px 0;
+}
+.trial-grid span {
+  padding: 10px 0;
+  text-align: center;
+  font: 10px monospace;
+  background: #d7dfc5;
+  color: #677554;
+  border: 1px solid #c8d2b4;
+}
+.trial-grid span.failed {
+  background: #e7b4a8;
+}
+.proof-body p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #757c68;
+}
+.proof-body .scope {
+  font: 10px/1.8 monospace;
+  color: #939782;
+}
+.proof-body svg {
+  width: 100%;
+  margin-top: 35px;
+  background: #efede5;
+}
+.proof-body svg text {
+  font: 10px monospace;
+  fill: #939782;
+}
+.proof-pair {
+  display: flex;
+  justify-content: space-between;
+  font: 11px monospace;
+  border-bottom: 1px solid #d3d4c5;
+  padding: 12px 0;
+}
+.proof-pair b {
+  font-weight: 400;
+  color: #ae7056;
+}
+.proof .machine {
+  font: 10px/1.8 monospace;
+  color: #939782;
+  border-top: 1px solid #d3d4c5;
+  padding-top: 24px;
+  max-width: none;
+}
+.proof details {
+  margin-top: 25px;
+}
+.proof summary {
+  font-size: 11px;
+  cursor: pointer;
+  color: #727b60;
+}
+@media (max-width: 760px) {
+  .proof-totals {
+    grid-template-columns: 1fr;
+  }
+  .proof-totals > div + div {
+    border-left: 0;
+    border-top: 1px solid #d3d4c5;
+    padding-left: 0;
+  }
+  .proof-body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .proof-totals strong {
+    font-size: 40px;
+  }
+  .trial-grid {
+    gap: 4px;
+  }
+  .trial-grid span {
+    font-size: 8px;
+    padding: 8px 0;
+  }
+}

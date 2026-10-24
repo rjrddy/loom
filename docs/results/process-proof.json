@@ -1,0 +1,7 @@
+{
+  "acknowledged_id": "restart-client:82",
+  "sigkill_restart": "same SQLite file; full operation union identical",
+  "parser_canary_logged": false,
+  "credential_logged": false,
+  "scope": "process kill, not simulated power loss"
+}

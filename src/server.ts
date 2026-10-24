@@ -11,6 +11,7 @@ export type RelayOptions = {
   db: string;
   editToken: string;
   viewToken: string;
+  heartbeatMs?: number;
 };
 type Peer = {
   actor: string;
@@ -151,6 +152,16 @@ export function start(options: RelayOptions) {
     maxPayload: 32768,
     perMessageDeflate: false,
   });
+  const alive = new WeakMap<WebSocket, boolean>();
+  const heartbeat = setInterval(() => {
+    for (const ws of wss.clients) {
+      if (alive.get(ws) === false) ws.terminate();
+      else {
+        alive.set(ws, false);
+        ws.ping();
+      }
+    }
+  }, options.heartbeatMs || 5000);
   http.on("upgrade", (req, socket, head) => {
     // Same-origin browser connections; origin-less native clients remain token-authenticated.
     if (
@@ -166,6 +177,8 @@ export function start(options: RelayOptions) {
     wss.handleUpgrade(req, socket, head, (ws) => wss.emit("connection", ws));
   });
   wss.on("connection", (ws) => {
+    alive.set(ws, true);
+    ws.on("pong", () => alive.set(ws, true));
     metrics.connections++;
     const deadline = setTimeout(() => ws.close(1008, "hello_required"), 5000);
     ws.on("error", () => log("socket_error", "transport"));
@@ -193,10 +206,22 @@ export function start(options: RelayOptions) {
           peers.set(ws, peer);
           send(ws, { type: "welcome", role: access });
           const ops = store.replica.all();
-          for (let i = 0; i < ops.length; i += 80)
-            send(ws, { type: "ops", ops: ops.slice(i, i + 80) });
-          send(ws, { type: "ready", operations: ops.length });
-          presence();
+          let offset = 0;
+          const hydrate = () => {
+            if (ws.readyState !== WebSocket.OPEN) return;
+            if (offset >= ops.length) {
+              send(ws, { type: "ready", operations: ops.length });
+              presence();
+              return;
+            }
+            const chunk = ops.slice(offset, offset + 80);
+            offset += chunk.length;
+            ws.send(JSON.stringify({ type: "ops", ops: chunk }), (error) => {
+              if (error) ws.terminate();
+              else setImmediate(hydrate);
+            });
+          };
+          hydrate();
           return;
         }
         if (Date.now() - peer.window > 1000) {
@@ -275,6 +300,7 @@ export function start(options: RelayOptions) {
     store,
     metrics,
     close: async () => {
+      clearInterval(heartbeat);
       for (const ws of wss.clients) ws.terminate();
       await new Promise<void>((r) => wss.close(() => r()));
       await new Promise<void>((r) => http.close(() => r()));

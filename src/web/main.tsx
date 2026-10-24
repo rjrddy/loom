@@ -1,3 +1,4 @@
+import { ProofView, type Proof } from "./Proof.js";
 import { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Workspace } from "./client.js";
@@ -8,7 +9,7 @@ function App() {
     [token, setToken] = useState("local-edit"),
     [editingToken, setEditingToken] = useState("local-edit"),
     [selected, setSelected] = useState("note-a"),
-    [proof, setProof] = useState<Record<string, unknown> | null>(null),
+    [proof, setProof] = useState<Proof | null>(null),
     [showAccess, setShowAccess] = useState(false),
     [draft, setDraft] = useState<string | null>(null);
   const workspace = useRef<Workspace | null>(null),
@@ -415,11 +416,7 @@ function App() {
             They do not establish a production availability or network-latency
             guarantee.
           </p>
-          <pre>
-            {proof
-              ? JSON.stringify(proof, null, 2)
-              : "Loading recorded evidence…"}
-          </pre>
+          <ProofView proof={proof} />
         </section>
       )}
       <footer>
