@@ -213,11 +213,12 @@ function App() {
                         onPointerDown={(e) => {
                           if (c?.role === "view") return;
                           setSelected(n.id);
+                          const handle = e.currentTarget;
                           const startX = e.clientX,
                             startY = e.clientY,
                             rect = board.current!.getBoundingClientRect();
-                          e.currentTarget.setPointerCapture(e.pointerId);
-                          e.currentTarget.onpointermove = (ev) => {
+                          handle.setPointerCapture(e.pointerId);
+                          handle.onpointermove = (ev) => {
                             const dx =
                                 ((ev.clientX - startX) / rect.width) * 900,
                               dy = ((ev.clientY - startY) / rect.height) * 620;
@@ -232,9 +233,9 @@ function App() {
                               Math.max(0, Math.min(440, n.y + dy)),
                             );
                           };
-                          e.currentTarget.onpointerup = () => {
-                            e.currentTarget.onpointermove = null;
-                            e.currentTarget.onpointerup = null;
+                          handle.onpointerup = () => {
+                            handle.onpointermove = null;
+                            handle.onpointerup = null;
                           };
                         }}
                       >

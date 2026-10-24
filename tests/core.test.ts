@@ -1,6 +1,14 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { Replica, ROOT, validate, editDraft, type Op } from "../src/core.js";
+import {
+  Replica,
+  ROOT,
+  validate,
+  editDraft,
+  compare,
+  canonical,
+  type Op,
+} from "../src/core.js";
 import { Store } from "../src/store.js";
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -65,8 +73,12 @@ export function campaign(trials = 80, steps = 750) {
         if (random() < 0.15) r.apply(op);
       }
     }
+    const expectedUnion = JSON.stringify(
+      [...all].sort((a, b) => compare(a.stamp, b.stamp)).map(canonical),
+    );
     const expected = replicas[0];
     for (const r of replicas) {
+      assert.equal(r.digest(), expectedUnion);
       assert.equal(r.digest(), expected.digest());
       assert.equal(r.text(), expected.text());
       assert.deepEqual(r.cards(), expected.cards());

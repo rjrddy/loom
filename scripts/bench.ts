@@ -4,7 +4,7 @@ import { once } from "node:events";
 import { mkdtempSync, rmSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir, cpus, platform, arch, totalmem } from "node:os";
-import { Replica, ROOT, type Op } from "../src/core.js";
+import { Replica, ROOT, compare, canonical, type Op } from "../src/core.js";
 import { start } from "../src/server.js";
 import { Wire, until } from "./wire.js";
 function random(seed: number) {
@@ -72,8 +72,12 @@ function campaign(trials: number, steps: number) {
         if (rng() < 0.15) r.apply(op);
       }
     }
+    const expectedUnion = JSON.stringify(
+      [...all].sort((a, b) => compare(a.stamp, b.stamp)).map(canonical),
+    );
     for (const r of replicas)
       if (
+        r.digest() !== expectedUnion ||
         r.digest() !== replicas[0].digest() ||
         r.text() !== replicas[0].text() ||
         JSON.stringify(r.cards()) !== JSON.stringify(replicas[0].cards())

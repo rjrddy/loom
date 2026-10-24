@@ -1,0 +1,11 @@
+stage: offline page reload
+stage: restore WebSocket frames
+stage: offline merge passed
+Traceback (most recent call last):
+  File "/Users/rajreddy/dev/outreach/loom/scripts/review.py", line 232, in <module>
+    main()
+    ~~~~^^
+  File "/Users/rajreddy/dev/outreach/loom/scripts/review.py", line 201, in main
+    assert not errors, errors
+           ^^^^^^^^^^
+AssertionError: ["Cannot set properties of null (setting 'onpointermove')"]

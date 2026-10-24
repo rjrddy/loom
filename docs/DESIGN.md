@@ -18,7 +18,7 @@ The canvas uses a fixed logical surface with responsive CSS coordinates. Cards c
 
 ## The actual editor failure
 
-The first browser regression kept a textarea draft visually stable while remote operations arrived, but diffed the next input against the newer replica text. That turned unseen remote characters into deletions. The real two-context run is retained in `results/caught-focused-draft.log`. The fix keeps the character identities shown to the focused editor and diffs against that base. New local inserts use stable anchors and remote insertions remain in the union. On blur the editor reveals the full merged view. A dedicated unit regression and real browser test cover this boundary.
+The first browser regression kept a textarea draft visually stable while remote operations arrived, but diffed the next input against the newer replica text. That turned unseen remote characters into deletions. The real two-context run is retained in `results/caught-focused-draft.log`. The fix keeps the character identities shown to the focused editor and diffs against that base. New local inserts use stable anchors and remote insertions remain in the union. On blur the editor reveals the full merged view. A dedicated unit regression and real browser test cover this boundary. A later real pointer-drag recording caught a React event lifetime error: a delayed pointer callback used a cleared event currentTarget. The handler now captures the actual DOM handle immediately; the failing browser output is retained in results/caught-pointer-event-lifetime.log.
 
 This is a single contiguous code-point prefix/suffix diff, not a production collaborative editor. Grapheme-aware cursor movement, IME composition, rich text, undo, shared selections and general intention preservation remain out of scope. Text/operation limits reject before the planned sequence mutation. On storage failure the UI warns that in-memory edits must be exported before closing.
 
@@ -46,7 +46,7 @@ Structured operational logs contain only controlled event/error codes and no tex
 
 ## Measured scope
 
-The full campaign records its PRNG seed, operation count and final union hash for every successful trial. It delivers random old operations during generation, drops initial deliveries, shuffles/deduplicates during healing, and compares exact operation unions plus text and canvas materializations. All replicas eventually receive every operation. It does not pretend permanent message loss converges.
+The full campaign records its PRNG seed, operation count and final union hash for every successful trial. It delivers random old operations during generation, drops initial deliveries, shuffles/deduplicates during healing, and compares exact operation unions to the independently retained generated operation list, plus cross-replica text and canvas materializations. All replicas eventually receive every operation. It does not pretend permanent message loss converges.
 
 Propagation uses actual WebSockets and SQLite commits, with separate Node client replicas. A sequential offer completes when both other clients have applied it. Raw samples, quantile method, polling resolution and machine are retained. It is neither internet/browser p99 nor saturation throughput. Browser proof uses independent contexts and actual controls. Human collaboration effectiveness is not measured.
 

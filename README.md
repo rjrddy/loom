@@ -5,7 +5,7 @@ Loom keeps a shared text draft and canvas convergent while participants edit con
 ## Result
 
 **80/80 seeded trials converged**, across 160,000 generated operations and 306,748 initially dropped deliveries; eventual anti-entropy restored the complete union.  
-Actual durable loopback WebSockets, 3 Node clients / 300 sequential offers: **p50 2.384 ms, p99 5.387 ms** until both other replicas applied the operation; polling resolution disclosed below.  
+Actual durable loopback WebSockets, 3 Node clients / 300 sequential offers: **p50 2.576 ms, p99 5.569 ms** until both other replicas applied the operation; polling resolution disclosed below.  
 Randomized campaign: **2,000 operations/trial**, 4 replicas; duplicate/reordered text operations and LWW canvas fields agree. [Raw output](docs/results/benchmark.json). Human collaboration benefit: **not measured**.
 
 ## Architecture
