@@ -1,0 +1,7 @@
+node_modules/
+dist-node/
+dist-web/
+.cache/
+.env
+__pycache__/
+docs/results/browser/recording/
