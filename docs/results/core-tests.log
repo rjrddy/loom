@@ -1,0 +1,20 @@
+
+> loom-workspace@0.1.0 test
+> node --test dist-node/tests/*.test.js
+
+{"trials":40,"replicas":4,"operations":20000,"initial_delivery_drops":38066,"converged":40,"scope":"seeded finite trials; reordered/duplicated/dropped initial deliveries, eventual full anti-entropy; not permanent-loss convergence"}
+(node:71460) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ sequence preserves delete-before-insert and descendants through tombstones (0.749791ms)
+✔ concurrent siblings and per-field LWW converge in either order (1.02375ms)
+✔ malformed/cyclic/future-anchor/conflicting IDs fail closed (0.325416ms)
+✔ seeded partition/reorder/drop/duplicate campaign converges after healing (740.523792ms)
+✔ SQLite dedupe, exclusive writer fencing and restart persistence (5.283875ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 790.365709

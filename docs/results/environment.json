@@ -1,0 +1,62 @@
+{
+  "python_browser_tool": "3.13.2",
+  "node": "v23.6.1",
+  "npm": "10.9.2",
+  "docker_local": "not installed; actual Linux image proof retained in implementation-ci.log",
+  "package_tree": {
+    "version": "0.1.0",
+    "name": "loom-workspace",
+    "dependencies": {
+      "@types/node": {
+        "version": "22.20.5",
+        "resolved": "https://registry.npmjs.org/@types/node/-/node-22.20.5.tgz",
+        "overridden": false
+      },
+      "@types/react-dom": {
+        "version": "19.2.2",
+        "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.2.tgz",
+        "overridden": false
+      },
+      "@types/react": {
+        "version": "19.2.2",
+        "resolved": "https://registry.npmjs.org/@types/react/-/react-19.2.2.tgz",
+        "overridden": false
+      },
+      "@types/ws": {
+        "version": "8.18.2",
+        "resolved": "https://registry.npmjs.org/@types/ws/-/ws-8.18.2.tgz",
+        "overridden": false
+      },
+      "prettier": {
+        "version": "3.9.10",
+        "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.9.10.tgz",
+        "overridden": false
+      },
+      "react-dom": {
+        "version": "19.2.0",
+        "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.0.tgz",
+        "overridden": false
+      },
+      "react": {
+        "version": "19.2.0",
+        "resolved": "https://registry.npmjs.org/react/-/react-19.2.0.tgz",
+        "overridden": false
+      },
+      "typescript": {
+        "version": "5.9.3",
+        "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+        "overridden": false
+      },
+      "vite": {
+        "version": "6.4.5",
+        "resolved": "https://registry.npmjs.org/vite/-/vite-6.4.5.tgz",
+        "overridden": false
+      },
+      "ws": {
+        "version": "8.22.0",
+        "resolved": "https://registry.npmjs.org/ws/-/ws-8.22.0.tgz",
+        "overridden": false
+      }
+    }
+  }
+}

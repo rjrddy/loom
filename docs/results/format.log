@@ -1,0 +1,24 @@
+
+> loom-workspace@0.1.0 format
+> prettier --write src scripts tests *.json *.ts index.html
+
+src/core.ts 70ms (unchanged)
+src/server.ts 29ms (unchanged)
+src/store.ts 4ms (unchanged)
+src/web/client.ts 13ms (unchanged)
+src/web/main.tsx 27ms (unchanged)
+src/web/Proof.tsx 9ms (unchanged)
+src/web/style.css 50ms (unchanged)
+scripts/bench.ts 11ms
+scripts/container_smoke.ts 5ms (unchanged)
+scripts/render_readme.ts 2ms (unchanged)
+scripts/wire.ts 3ms (unchanged)
+tests/core.test.ts 11ms
+tests/process.test.ts 4ms (unchanged)
+tests/relay.test.ts 4ms (unchanged)
+package-lock.json 11ms (unchanged)
+package.json 0ms (unchanged)
+tsconfig.node.json 1ms (unchanged)
+tsconfig.web.json 0ms (unchanged)
+vite.config.ts 1ms (unchanged)
+index.html 13ms (unchanged)

@@ -1,0 +1,1305 @@
+verify	Set up job	﻿2026-10-24T12:12:53.2543153Z Current runner version: '2.338.0'
+verify	Set up job	2026-10-24T12:12:53.2569915Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-10-24T12:12:53.2570852Z Hosted Compute Agent
+verify	Set up job	2026-10-24T12:12:53.2571515Z Version: 20261012.601
+verify	Set up job	2026-10-24T12:12:53.2572168Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+verify	Set up job	2026-10-24T12:12:53.2572902Z Build Date: 2026-10-12T17:48:21Z
+verify	Set up job	2026-10-24T12:12:53.2573672Z Worker ID: {75a19f1e-8010-4cff-b547-b4fa4c68985f}
+verify	Set up job	2026-10-24T12:12:53.2574386Z Region: westus3
+verify	Set up job	2026-10-24T12:12:53.2574947Z Cloud: Azure
+verify	Set up job	2026-10-24T12:12:53.2575540Z ##[endgroup]
+verify	Set up job	2026-10-24T12:12:53.2576965Z ##[group]Operating System
+verify	Set up job	2026-10-24T12:12:53.2577761Z Ubuntu
+verify	Set up job	2026-10-24T12:12:53.2578588Z 24.04.5
+verify	Set up job	2026-10-24T12:12:53.2579102Z LTS
+verify	Set up job	2026-10-24T12:12:53.2579686Z ##[endgroup]
+verify	Set up job	2026-10-24T12:12:53.2580229Z ##[group]Runner Image
+verify	Set up job	2026-10-24T12:12:53.2580898Z Image: ubuntu-24.04
+verify	Set up job	2026-10-24T12:12:53.2581479Z Version: 20261012.334.1
+verify	Set up job	2026-10-24T12:12:53.2582530Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+verify	Set up job	2026-10-24T12:12:53.2584387Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+verify	Set up job	2026-10-24T12:12:53.2585772Z ##[endgroup]
+verify	Set up job	2026-10-24T12:12:53.2586959Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-10-24T12:12:53.2589287Z Contents: read
+verify	Set up job	2026-10-24T12:12:53.2589943Z Metadata: read
+verify	Set up job	2026-10-24T12:12:53.2590539Z ##[endgroup]
+verify	Set up job	2026-10-24T12:12:53.2592721Z Secret source: Actions
+verify	Set up job	2026-10-24T12:12:53.2593768Z Cache mode: write
+verify	Set up job	2026-10-24T12:12:53.2594558Z Prepare workflow directory
+verify	Set up job	2026-10-24T12:12:53.3004081Z Prepare all required actions
+verify	Set up job	2026-10-24T12:12:53.3053268Z Getting action download info
+verify	Set up job	2026-10-24T12:12:53.6259496Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-10-24T12:12:53.7471723Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+verify	Set up job	2026-10-24T12:12:53.8330586Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+verify	Set up job	2026-10-24T12:12:53.9095346Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+verify	Set up job	2026-10-24T12:12:54.1267530Z Complete job name: verify
+verify	Run actions/checkout@v4	﻿2026-10-24T12:12:54.2069903Z ##[group]Run actions/checkout@v4
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2070812Z with:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2071243Z   repository: rjrddy/loom
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2075292Z   token: ***
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2075720Z   ssh-strict: true
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2076148Z   ssh-user: git
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2076640Z   persist-credentials: true
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2077130Z   clean: true
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2077564Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2078270Z   fetch-depth: 1
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2078703Z   fetch-tags: false
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2079135Z   show-progress: true
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2079564Z   lfs: false
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2079972Z   submodules: false
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2080407Z   set-safe-directory: true
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2080901Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.2081694Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3181439Z Syncing repository: rjrddy/loom
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3184161Z ##[group]Getting Git version info
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3185313Z Working directory is '/home/runner/work/loom/loom'
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3187114Z [command]/usr/bin/git version
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3292322Z git version 2.55.0
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3335568Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3352930Z Temporarily overriding HOME='/home/runner/work/_temp/9c8b3066-f4c6-4d97-a733-3f395bbe464a' before making global git config changes
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3355663Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3360985Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/loom/loom
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3436869Z Deleting the contents of '/home/runner/work/loom/loom'
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3444548Z ##[group]Initializing the repository
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3449880Z [command]/usr/bin/git init /home/runner/work/loom/loom
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3599450Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3601360Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3607346Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3611375Z hint: call:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3612556Z hint:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3613734Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3614970Z hint:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3616113Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3619426Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3620388Z hint:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3620931Z hint: 	git branch -m <name>
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3621511Z hint:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3622250Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3623484Z Initialized empty Git repository in /home/runner/work/loom/loom/.git/
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3625424Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/loom
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3691336Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3692690Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3721027Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3755781Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3756921Z ##[group]Setting up auth
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3763808Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.3815342Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4215594Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4253960Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4494210Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4533454Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4774364Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4816792Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4817661Z ##[group]Fetching the repository
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.4829322Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +55be38f2c0d3a44b5a31dbd1cce0da20b11cf9f5:refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9909858Z From https://github.com/rjrddy/loom
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9911836Z  * [new ref]         55be38f2c0d3a44b5a31dbd1cce0da20b11cf9f5 -> origin/main
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9985094Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9986607Z ##[group]Determining the checkout info
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9988712Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9990049Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@v4	2026-10-24T12:12:54.9992768Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0017141Z ##[group]Checking out the ref
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0022153Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0131449Z Switched to a new branch 'main'
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0137499Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0144973Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0191660Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@v4	2026-10-24T12:12:55.0219057Z 55be38f2c0d3a44b5a31dbd1cce0da20b11cf9f5
+verify	Run actions/setup-node@v4	﻿2026-10-24T12:12:55.0530878Z ##[group]Run actions/setup-node@v4
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.0531567Z with:
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.0531999Z   node-version: 22
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.0532484Z   always-auth: false
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.0532965Z   check-latest: false
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.0537396Z   token: ***
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.0537863Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.1969818Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.1974690Z (node:2302) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.1976083Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.1978485Z ##[group]Environment details
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.6524602Z node: v22.23.3
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.6525759Z npm: 10.9.9
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.6526593Z yarn: 1.22.22
+verify	Run actions/setup-node@v4	2026-10-24T12:12:55.6530004Z ##[endgroup]
+verify	Run actions/setup-python@v5	﻿2026-10-24T12:12:55.6856228Z ##[group]Run actions/setup-python@v5
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6857587Z with:
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6858782Z   python-version: 3.13
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6859859Z   check-latest: false
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6871472Z   token: ***
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6872504Z   update-environment: true
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6873670Z   allow-prereleases: false
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6874807Z   freethreaded: false
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.6875859Z ##[endgroup]
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.8255865Z ##[group]Installed versions
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.8388446Z (node:2333) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.8391876Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.8393888Z Successfully set up CPython (3.13.16)
+verify	Run actions/setup-python@v5	2026-10-24T12:12:55.8395771Z ##[endgroup]
+verify	Run make setup build lint test scan	﻿2026-10-24T12:12:55.8609858Z ##[group]Run make setup build lint test scan
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.8611377Z ^[[36;1mmake setup build lint test scan^[[0m
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9047501Z shell: /usr/bin/bash -e {0}
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9048923Z env:
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9050086Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9052018Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9053953Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9055710Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9057463Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9059291Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9060743Z ##[endgroup]
+verify	Run make setup build lint test scan	2026-10-24T12:12:55.9225722Z npm ci
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6716549Z 
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6717747Z added 27 packages, and audited 28 packages in 2s
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6718496Z 
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6718852Z 6 packages are looking for funding
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6719529Z   run `npm fund` for details
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6726710Z 
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.6727343Z found 0 vulnerabilities
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.7162844Z npm run build
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.8075954Z 
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.8077172Z > loom-workspace@0.1.0 build
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.8078554Z > tsc -p tsconfig.node.json && tsc -p tsconfig.web.json && vite build
+verify	Run make setup build lint test scan	2026-10-24T12:12:57.8079170Z 
+verify	Run make setup build lint test scan	2026-10-24T12:13:01.3865280Z ^[[36mvite v6.4.5 ^[[32mbuilding for production...^[[36m^[[39m
+verify	Run make setup build lint test scan	2026-10-24T12:13:01.4799534Z transforming...
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.4447151Z ^[[32m✓^[[39m 31 modules transformed.
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.5855134Z rendering chunks...
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.5938926Z computing gzip size...
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.6030724Z ^[[2mdist-web/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.61 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.37 kB^[[22m
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.6032890Z ^[[2mdist-web/^[[22m^[[2massets/^[[22m^[[35mindex-DeRUFvgx.css  ^[[39m^[[1m^[[2m 12.11 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  3.42 kB^[[22m
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.6040357Z ^[[2mdist-web/^[[22m^[[2massets/^[[22m^[[36mindex-BVSso_5M.js   ^[[39m^[[1m^[[2m216.35 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 68.47 kB^[[22m
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.6051177Z ^[[32m✓ built in 1.19s^[[39m
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.6336732Z npm run lint
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.7374471Z 
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.7375972Z > loom-workspace@0.1.0 lint
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.7378210Z > tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.web.json && prettier --check src scripts tests *.json *.ts index.html
+verify	Run make setup build lint test scan	2026-10-24T12:13:02.7379660Z 
+verify	Run make setup build lint test scan	2026-10-24T12:13:05.6157828Z Checking formatting...
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.5286832Z All matched files use Prettier code style!
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.5485075Z npm test
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.6423661Z 
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.6424305Z > loom-workspace@0.1.0 test
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.6425018Z > node --test dist-node/tests/*.test.js
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.6425423Z 
+verify	Run make setup build lint test scan	2026-10-24T12:13:06.6925939Z TAP version 13
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5107335Z # {"trials":40,"replicas":4,"operations":20000,"initial_delivery_drops":38066,"converged":40,"scope":"seeded finite trials; reordered/duplicated/dropped initial deliveries, eventual full anti-entropy; not permanent-loss convergence"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5166814Z # (node:2472) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5168714Z # (Use `node --trace-warnings ...` to show where the warning was created)
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5193718Z # Subtest: sequence preserves delete-before-insert and descendants through tombstones
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5200682Z ok 1 - sequence preserves delete-before-insert and descendants through tombstones
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5201804Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5202228Z   duration_ms: 1.750784
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5202668Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5203046Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5205601Z # Subtest: concurrent siblings and per-field LWW converge in either order
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5207547Z ok 2 - concurrent siblings and per-field LWW converge in either order
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5209329Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5209727Z   duration_ms: 1.181049
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5210574Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5210962Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5211792Z # Subtest: malformed/cyclic/future-anchor/conflicting IDs fail closed
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5213706Z ok 3 - malformed/cyclic/future-anchor/conflicting IDs fail closed
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5214554Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5214978Z   duration_ms: 0.734393
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5215406Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5215764Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5218792Z # Subtest: seeded partition/reorder/drop/duplicate campaign converges after healing
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5220290Z ok 4 - seeded partition/reorder/drop/duplicate campaign converges after healing
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5221257Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5222036Z   duration_ms: 1781.051801
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5222497Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5222878Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5223657Z # Subtest: SQLite dedupe, exclusive writer fencing and restart persistence
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5224736Z ok 5 - SQLite dedupe, exclusive writer fencing and restart persistence
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5225481Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5225878Z   duration_ms: 5.333793
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5226310Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5226669Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5227348Z # Subtest: focused draft edits preserve unseen remote insertions
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5228675Z ok 6 - focused draft edits preserve unseen remote insertions
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5229347Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5229738Z   duration_ms: 0.453148
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5230166Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5230557Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5342413Z # {"sigkill_restart":"pass","parser_canary":"excluded"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5343718Z # Subtest: real SIGKILL restart preserves acknowledged data; parser/auth logs omit canary and tokens
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5345150Z ok 7 - real SIGKILL restart preserves acknowledged data; parser/auth logs omit canary and tokens
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5346985Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5347403Z   duration_ms: 444.469915
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5347856Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5348588Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5349549Z # (node:2479) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5350818Z # (Use `node --trace-warnings ...` to show where the warning was created)
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5351549Z # {"event":"ready"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5352115Z # {"event":"rejected","code":"id_collision"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5352789Z # {"event":"rejected","code":"read_only"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5353463Z # {"event":"rejected","code":"actor_mismatch"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5354567Z # {"event":"rejected","code":"invalid_cursor"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5355281Z # {"event":"rejected","code":"hello_rejected"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5356880Z # {"caught":["id_collision","read_only","actor_mismatch","invalid_cursor","hello_rejected"],"duplicates":1,"offline_merge":"pass"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5358212Z # {"event":"ready"}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5359293Z # Subtest: actual WebSockets: concurrent offline union, dedupe, actor/auth/readonly and cursor gates
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5360812Z ok 8 - actual WebSockets: concurrent offline union, dedupe, actor/auth/readonly and cursor gates
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5361678Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5362065Z   duration_ms: 224.150659
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5362514Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5362886Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5363560Z # {"half_open_socket":"terminated","test_heartbeat_interval_ms":40}
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5364560Z # Subtest: heartbeat terminates a socket that stops answering protocol pings
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5365640Z ok 9 - heartbeat terminates a socket that stops answering protocol pings
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5366337Z   ---
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5366822Z   duration_ms: 181.119339
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5367227Z   type: 'test'
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5367556Z   ...
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5367850Z 1..9
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5368382Z # tests 9
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5368708Z # suites 0
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5369307Z # pass 9
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5369669Z # fail 0
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5370115Z # cancelled 0
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5370981Z # skipped 0
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5371396Z # todo 0
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5372016Z # duration_ms 1861.067726
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.5515708Z npm audit --audit-level=low
+verify	Run make setup build lint test scan	2026-10-24T12:13:08.9246930Z found 0 vulnerabilities
+verify	Run LOOM_QUICK=1 make bench	﻿2026-10-24T12:13:08.9376566Z ##[group]Run LOOM_QUICK=1 make bench
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9376919Z ^[[36;1mLOOM_QUICK=1 make bench^[[0m
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9445159Z shell: /usr/bin/bash -e {0}
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9445428Z env:
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9445704Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9446166Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9446622Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9447010Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9447401Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9447801Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9448418Z ##[endgroup]
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:08.9556082Z npm run bench
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.0478691Z 
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.0479384Z > loom-workspace@0.1.0 bench
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.0479825Z > node dist-node/scripts/bench.js
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.0480021Z 
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.8594989Z (node:2537) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.8595803Z (Use `node --trace-warnings ...` to show where the warning was created)
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:09.8642791Z {"event":"ready"}
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6697034Z {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6698215Z   "environment": {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6699223Z     "node": "v22.23.3",
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6699701Z     "platform": "linux",
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6700081Z     "arch": "x64",
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6700553Z     "cpu": "AMD EPYC 7763 64-Core Processor",
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6701138Z     "logical_cpus": 4,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6701543Z     "ram_bytes": 16766414848
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6701823Z   },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6702048Z   "convergence": {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6722793Z     "trials": 12,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6723234Z     "operations_per_trial": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6723634Z     "replicas": 4,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6724035Z     "operations": 7200,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6724504Z     "initial_delivery_drops": 13847,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6724996Z     "converged": 12,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6725406Z     "trial_results": [
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6725915Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6726235Z         "seed": 1,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6726559Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6727216Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6728352Z         "union_sha256": "25a8149bc34d45f396e9a40744415e9f1b229f5333941c48806533a772945339"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6729141Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6729482Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6729808Z         "seed": 2,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6730187Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6730625Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6731478Z         "union_sha256": "e52e6355c1dd80b59fa8b80810dcd628ff5f4c126ef2e9046e358a7ad5b3e8d2"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6732275Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6732659Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6732998Z         "seed": 3,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6733441Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6733881Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6734695Z         "union_sha256": "d6e733d0c2080cccca5e89e884a81a532a078c63a3aa562105ae74a8839a0cf5"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6735652Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6736004Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6736353Z         "seed": 4,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6736770Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6737221Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6738311Z         "union_sha256": "3b3676aa9f4c197f4d8436b7f4f511a3738156a51b33022418b9dd4b5feb350c"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6739132Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6739486Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6739849Z         "seed": 5,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6740296Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6740759Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6741559Z         "union_sha256": "632295f9560a5873110be70b6f2117e97c2a83f557f51bc9b13655679a93a5d7"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6742364Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6742681Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6743064Z         "seed": 6,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6743478Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6744315Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6745181Z         "union_sha256": "e6e4419671e9f674bf10cfe26072f1abd3459f0b983d0cdd84735a7dd5d9704b"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6746063Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6746414Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6746779Z         "seed": 7,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6747230Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6747675Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6748794Z         "union_sha256": "208deb08cb15ba07ddb462d3b619633aa3be809009613bbcef6792019b59d82b"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6749687Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6750066Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6750478Z         "seed": 8,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6750918Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6751393Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6752293Z         "union_sha256": "c9e8ca24004bd644f46d8db305aac6c14acfe81d134197e985f3eb35855137bc"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6753106Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6753481Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6753805Z         "seed": 9,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6754184Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6754557Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6755001Z         "union_sha256": "4805c0363f989e0d00a19862aa2756bd74e0a6b5f266a5510e62f1c3980a8651"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6755473Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6755657Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6755859Z         "seed": 10,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6756090Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6756333Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6756774Z         "union_sha256": "c1c9d55c3e807c85ca10f048b971ea965fb2d4c04d6babc19ad1a04c86fc4ee7"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6757233Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6757410Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6757615Z         "seed": 11,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6757849Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6758395Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6758828Z         "union_sha256": "dda3146c29990a5fc1c35c28670554bf380c7a6de3c0cb20da645e4024d022b2"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6759231Z       },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6759428Z       {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6759617Z         "seed": 12,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6759874Z         "operations": 600,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6760130Z         "converged": true,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6760584Z         "union_sha256": "941795635281636c08fca9ab9841783676312014e6b90e43f445956aca47111f"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6761238Z       }
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6761421Z     ],
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6761650Z     "elapsed_ms": 659.564354,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6762534Z     "scope": "seeded finite campaign; initial reordering, duplication, drops/partitions; eventual full anti-entropy and distinct actors required; not a proof under permanent loss"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6763349Z   },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6763563Z   "propagation": {
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6763799Z     "samples": 300,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6764029Z     "clients": 3,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6764289Z     "p50_ms": 2.3187230000003183,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6764581Z     "p99_ms": 8.012090000000171,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6764877Z     "min_ms": 1.0965289999994638,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6765157Z     "max_ms": 9.0510519999998,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6765416Z     "raw_ms": [
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6765674Z       6.830522999999971,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6765918Z       3.8958939999999984,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6766156Z       1.646107000000029,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6766391Z       2.495525999999927,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6766629Z       3.53851700000007,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6766845Z       2.604449999999929,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6767074Z       2.421748999999977,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6767299Z       2.537435000000073,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6767525Z       2.3689430000000584,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6767758Z       1.735243999999966,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6768108Z       2.7622860000000173,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6768350Z       1.3099899999999707,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6768568Z       2.2444570000000112,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6768799Z       2.509102000000098,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6769026Z       2.4078329999999823,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6769259Z       2.6641240000000153,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6769471Z       2.78636999999992,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6769696Z       1.321140000000014,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6770080Z       6.627116999999998,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6770304Z       3.473404999999957,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6770527Z       1.6573419999999714,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6770748Z       2.6868440000000646,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6770967Z       1.2689530000000104,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6771206Z       4.091550999999981,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6771441Z       2.6398060000000214,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6771672Z       4.925909999999931,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6771900Z       3.4390409999999747,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6772112Z       2.515412999999967,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6772360Z       1.2770880000000489,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6772955Z       2.536085000000071,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6773415Z       1.344714999999951,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6773858Z       2.519260000000031,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6774303Z       1.5423840000000837,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6774733Z       2.184714999999983,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6775190Z       2.3307290000000194,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6775442Z       1.3829359999999724,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6775702Z       2.775579999999991,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6775943Z       1.2003749999998945,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6776173Z       2.1634149999999863,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6776397Z       2.5575319999999238,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6776609Z       3.4533870000000206,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6776846Z       2.430735000000027,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6777079Z       3.6560459999999466,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6777308Z       2.3710740000000214,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6777535Z       3.534448999999995,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6777748Z       2.4066300000000638,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6778146Z       1.3926139999999805,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6778396Z       2.2094110000000455,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6778607Z       1.6254389999999148,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6778837Z       2.1845349999999826,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6779062Z       2.4340810000001056,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6779289Z       1.3449750000000904,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6779509Z       2.2090299999999843,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6779742Z       2.3391040000000203,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6779951Z       2.396620999999982,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6780179Z       2.1950540000000274,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6780415Z       1.9309409999999616,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6780644Z       2.222846000000004,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6780876Z       2.525771999999961,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6781103Z       2.261949999999956,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6781335Z       5.554898999999978,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6781765Z       2.375989000000118,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6781999Z       2.4643040000000838,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6782229Z       3.50028999999995,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6782456Z       2.4399590000000444,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6782688Z       4.36846300000002,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6782912Z       2.5436030000000756,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6783124Z       3.514897999999903,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6783353Z       2.2976129999999557,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6783583Z       1.3677259999999478,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6783811Z       2.2312500000000455,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6784043Z       2.499520000000075,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6784267Z       3.479812000000038,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6784479Z       2.5657340000000204,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6784710Z       1.2334960000000592,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6784949Z       2.1667489999999816,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6785183Z       2.4007560000000012,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6785419Z       6.92179299999998,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6785646Z       2.372372999999925,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6785875Z       2.3058079999998427,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6786087Z       2.415673000000197,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6786312Z       1.3408250000002226,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6786542Z       2.235546999999997,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6786780Z       2.5627089999998134,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6787010Z       2.293565999999828,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6787240Z       2.4279959999998937,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6787450Z       1.345292999999856,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6787681Z       2.2187360000002627,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6787913Z       2.6659310000000005,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6788409Z       2.4358509999997295,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6788646Z       2.57549199999994,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6788868Z       2.284828999999718,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6789092Z       2.3333200000001852,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6789471Z       1.5052330000003167,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6789701Z       2.129298999999719,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6789931Z       2.461149000000205,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6790143Z       8.64834000000019,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6790367Z       2.4378059999999095,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6790600Z       1.2181759999998576,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6790828Z       2.2528800000000047,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6791055Z       2.303273999999874,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6791284Z       1.370390000000043,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6791511Z       2.231228999999985,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6791719Z       2.497056000000157,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6791957Z       2.1447080000002643,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6792195Z       2.417946999999913,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6792428Z       2.3502509999998438,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6792666Z       3.5140160000000833,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6792894Z       2.4470930000002227,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6793105Z       3.5059909999999945,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6793333Z       2.4505490000001373,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6793560Z       3.5179039999998167,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6793795Z       2.557017999999971,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6794030Z       8.012090000000171,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6794260Z       1.2200299999999515,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6794476Z       2.2774460000000545,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6794707Z       2.576814999999897,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6794941Z       2.281293000000005,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6795169Z       2.4680520000001707,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6795409Z       1.2794309999999314,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6795635Z       4.534763999999996,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6795862Z       1.28860799999984,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6796078Z       2.657455999999911,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6796310Z       3.587384000000384,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6796519Z       2.4844920000000457,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6796726Z       1.195774000000256,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6796964Z       2.264169999999922,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6797174Z       2.3821509999997943,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6797384Z       3.4358299999998962,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6797616Z       6.722201000000041,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6797828Z       2.4013770000001387,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6798320Z       2.4167160000001786,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6798750Z       2.1574319999999716,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6799125Z       2.2305569999998625,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6799478Z       2.450499000000036,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6799860Z       1.3707210000002306,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6800444Z       2.157400999999936,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6800805Z       2.3323279999999613,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6801177Z       2.4847529999997278,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6801529Z       2.237170999999762,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6801906Z       2.5343760000000657,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6802270Z       3.487246000000141,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6802623Z       3.9092650000002322,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6803021Z       2.5137170000002698,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6803386Z       3.551335999999992,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6803740Z       9.0510519999998,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6804097Z       1.5153809999997065,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6804459Z       2.215360000000146,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6804808Z       2.694684999999936,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6805165Z       3.966131000000132,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6805541Z       3.3093039999998837,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6805932Z       2.481437000000369,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6806319Z       3.587373999999727,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6806682Z       3.9671330000001035,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6807073Z       1.7778920000000653,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6807484Z       2.607923000000028,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6807942Z       3.5377599999997074,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6808465Z       2.6316070000002583,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6808721Z       1.1762179999996079,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6809063Z       2.2477200000002995,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6809281Z       2.3458630000000085,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6809488Z       4.262965999999778,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6809706Z       2.012399999999616,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6809916Z       2.8082680000002256,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6810127Z       3.4572199999997792,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6810342Z       2.601771000000099,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6810549Z       8.035694000000149,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6810757Z       2.329142000000047,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6810974Z       3.9990419999999176,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6811361Z       4.246213999999782,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6811567Z       1.4992010000000846,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6811774Z       2.2411580000002687,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6811980Z       1.679909000000407,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6812187Z       2.1374140000002626,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6812399Z       2.4056250000003274,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6812606Z       1.5788099999999758,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6812819Z       2.5810630000000856,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6813023Z       4.106252999999924,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6813231Z       2.615135999999893,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6813435Z       1.505282999999963,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6813639Z       4.064312999999856,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6813842Z       2.5554050000000643,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6814057Z       2.329493000000184,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6814300Z       2.406486999999288,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6814509Z       1.226752999999917,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6814713Z       2.1432050000003073,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6814918Z       2.4218049999999494,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6815131Z       2.2948880000003555,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6815347Z       2.242981000000327,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6815551Z       2.179943000000094,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6815757Z       2.311279000000468,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6815959Z       2.3022620000001552,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6816171Z       2.130841999999575,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6816376Z       2.414150999999947,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6816584Z       2.2698010000003705,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6816789Z       1.1740329999993264,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6816997Z       2.108470000000125,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6817202Z       2.1978760000001785,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6817409Z       2.353567999999541,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6817620Z       1.3206380000001445,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6817836Z       2.0947339999993346,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6818293Z       4.931624999999258,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6818505Z       2.1921060000004218,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6818711Z       2.4266239999997197,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6818914Z       3.4739010000002963,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6819115Z       2.368594999999914,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6819329Z       3.812533999999687,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6819530Z       2.300739000000249,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6819732Z       1.3004689999997936,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6819933Z       2.317300000000614,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6820139Z       1.5760849999996935,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6820480Z       2.1037409999999,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6820689Z       2.301829999999427,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6820893Z       1.6767429999999877,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6821099Z       2.2422599999999875,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6821306Z       2.3274789999995846,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6821665Z       1.2580099999995582,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6822021Z       2.1106939999999668,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6822376Z       2.1667480000005526,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6822731Z       2.264241000000766,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6823078Z       1.3928219999997964,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6823422Z       2.1905729999998584,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6823773Z       2.1011259999995673,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6824120Z       2.3550199999999677,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6824464Z       1.3406550000008792,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6824825Z       2.118609000000106,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6825172Z       2.227722999999969,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6825514Z       2.370378999999957,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6825856Z       3.486084000000119,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6826207Z       4.7338049999998475,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6826565Z       2.6403040000004694,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6826915Z       1.3774530000000595,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6827264Z       2.274800000000141,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6827613Z       2.2873239999998987,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6828143Z       3.584668999999849,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6828506Z       2.326688000000104,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6828855Z       1.440190999999686,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6829206Z       2.1973959999995714,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6829554Z       2.2885459999997693,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6829903Z       2.407398000000285,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6830246Z       4.304513999999472,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6830595Z       2.3238519999995333,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6830947Z       3.4244390000003477,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6831302Z       2.3809289999999237,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6831829Z       4.6130590000002485,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6832176Z       5.68776699999944,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6832521Z       2.2765840000001845,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6832907Z       2.243441999999959,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6833288Z       2.332347999999911,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6833674Z       2.21632099999988,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6834044Z       2.1407499999995707,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6834416Z       2.058336000000054,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6834774Z       2.2042380000002595,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6835130Z       2.237620999999308,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6835539Z       2.137223000000631,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6835889Z       2.1135089999997945,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6836229Z       2.0776519999999437,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6836578Z       2.1614790000003268,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6836926Z       2.3634729999994306,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6837268Z       1.2801620000000185,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6837603Z       2.087672000000566,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6838147Z       2.1267330000000584,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6838509Z       2.230026999999609,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6838911Z       2.270903999999973,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6839280Z       2.133636999999908,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6839639Z       7.059340000000702,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6839993Z       2.3187230000003183,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6840361Z       2.364187000000129,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6840707Z       1.2630300000000716,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6841069Z       2.0715509999999995,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6841434Z       4.535274999999274,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6841795Z       1.3290839999999662,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6842147Z       2.109560999999303,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6842505Z       2.468573000000106,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6842860Z       2.2847490000003745,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6843223Z       1.0965289999994638,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6843580Z       2.1537140000000363,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6843917Z       2.1530329999995956,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6844249Z       2.222552999999607,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6844651Z       2.280551999999261,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6845000Z       1.1311940000005052,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6845395Z       2.214208000000326,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6845739Z       2.0977899999998044,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6846094Z       2.195201999999881,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6846440Z       5.974613999999747,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6846655Z       2.3136329999997542,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6847040Z       1.1185199999999895,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6847249Z       2.120552000000316,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6847457Z       2.1506790000003093,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6847666Z       2.075337999999647,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6847870Z       3.7507379999997283,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6848381Z       2.3451420000001235,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6848603Z       2.270622000000003,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6848809Z       1.195042999999714,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6849028Z       3.014212000000043,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6849246Z       2.4340179999999236,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6849459Z       2.2611150000002453,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6849674Z       1.3822129999998651,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6849881Z       2.0832030000001396,
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6850096Z       2.0955149999999776
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6850307Z     ],
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6851755Z     "scope": "actual loopback WebSocket send → both other Node clients applied; sequential offers; SQLite FULL commit before broadcast; 2ms polling resolution; not internet or browser latency"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6853208Z   },
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6853661Z   "human_collaboration_benefit": "not measured"
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6854171Z }
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.6909781Z node dist-node/scripts/render_readme.js
+verify	Run LOOM_QUICK=1 make bench	2026-10-24T12:13:15.7313323Z Generated README.md exclusively from retained benchmark.json
+verify	Run docker build -t loom:test .	﻿2026-10-24T12:13:15.7392506Z ##[group]Run docker build -t loom:test .
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7392872Z ^[[36;1mdocker build -t loom:test .^[[0m
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7457336Z shell: /usr/bin/bash -e {0}
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7457593Z env:
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7457863Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7458565Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7459015Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7459395Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7459782Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7460178Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run docker build -t loom:test .	2026-10-24T12:13:15.7460515Z ##[endgroup]
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3934731Z #0 building with "default" instance using docker driver
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3935200Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3935503Z #1 [internal] load build definition from Dockerfile
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3936098Z #1 transferring dockerfile: 748B 0.0s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3936589Z #1 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3936761Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.3937181Z #2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.5789553Z #2 ...
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.5789867Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.5790394Z #3 [auth] library/node:pull token for registry-1.docker.io
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.5791060Z #3 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.7289902Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:16.7290901Z #2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.0291956Z #2 DONE 0.8s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1536682Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1537377Z #4 [internal] load .dockerignore
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1537785Z #4 transferring context: 105B done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1538299Z #4 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1538424Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1538570Z #5 [internal] load build context
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1538895Z #5 transferring context: 164.20kB done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1539157Z #5 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1539271Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1539848Z #6 [build 1/9] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1540874Z #6 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1541739Z #6 sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 5.22kB / 5.22kB done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1542478Z #6 sha256:ea11b74b986d520137cdef9a5346e447a00f275ecc4abc0055b7151226231e09 1.93kB / 1.93kB done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1543211Z #6 sha256:58a96d9752cfedf3c4fcfcbe2dabbad725c147f7003caa9f7899a3f414ada3fc 6.77kB / 6.77kB done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1543933Z #6 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 0B / 28.25MB 0.1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1545016Z #6 sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 0B / 3.31kB 0.1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.1545748Z #6 sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 9.44MB / 49.89MB 0.1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.3536669Z #6 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.3s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.3537563Z #6 sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 3.31kB / 3.31kB 0.1s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.3538671Z #6 sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 49.89MB / 49.89MB 0.3s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.3539515Z #6 sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555 1.71MB / 1.71MB 0.2s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.3540311Z #6 sha256:9d58805976c12f11013d188c510c3520e3f061c1b311d4905afe5865aa496e63 449B / 449B 0.3s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.4937747Z #6 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.3s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:17.4939150Z #6 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 0.1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:18.4642643Z #6 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 1.1s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:18.6426545Z #6 extracting sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:18.6924706Z #6 extracting sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.0546513Z #6 extracting sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 1.2s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.0547612Z #6 extracting sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2994644Z #6 extracting sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555 0.0s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2996059Z #6 extracting sha256:9d58805976c12f11013d188c510c3520e3f061c1b311d4905afe5865aa496e63 done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2996868Z #6 DONE 3.1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2997075Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2997288Z #7 [build 2/9] WORKDIR /app
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2997722Z #7 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2997917Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2998503Z #8 [build 3/9] COPY package*.json ./
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2999012Z #8 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2999287Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:20.2999504Z #9 [build 4/9] RUN npm ci
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.7069114Z #9 1.558 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.7069866Z #9 1.558 added 27 packages, and audited 28 packages in 1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.7070458Z #9 1.558 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.7070946Z #9 1.558 6 packages are looking for funding
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.7071576Z #9 1.558   run `npm fund` for details
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8343530Z #9 1.559 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8344184Z #9 1.559 found 0 vulnerabilities
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8359207Z #9 1.560 npm notice
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8360334Z #9 1.560 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8361684Z #9 1.560 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8364064Z #9 1.560 npm notice To update run: npm install -g npm@12.2.1
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8365163Z #9 1.560 npm notice
+verify	Run docker build -t loom:test .	2026-10-24T12:13:21.8365728Z #9 DONE 1.7s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0268939Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0270161Z #10 [build 5/9] COPY tsconfig*.json vite.config.ts index.html ./
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0270731Z #10 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0270886Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0271051Z #11 [build 6/9] COPY src/ src/
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0271353Z #11 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0271486Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0271662Z #12 [build 7/9] COPY tests/ tests/
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0271972Z #12 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0272106Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0272279Z #13 [build 8/9] COPY scripts/ scripts/
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0272590Z #13 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0272724Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0272984Z #14 [build 9/9] RUN npm run build && npm prune --omit=dev
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0916271Z #14 0.215 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0916955Z #14 0.215 > loom-workspace@0.1.0 build
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0918299Z #14 0.215 > tsc -p tsconfig.node.json && tsc -p tsconfig.web.json && vite build
+verify	Run docker build -t loom:test .	2026-10-24T12:13:22.0919079Z #14 0.215 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:25.5905762Z #14 3.714 vite v6.4.5 building for production...
+verify	Run docker build -t loom:test .	2026-10-24T12:13:25.8159599Z #14 3.787 transforming...
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.5873899Z #14 4.711 ✓ 31 modules transformed.
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.7303934Z #14 4.854 rendering chunks...
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.8963077Z #14 4.861 computing gzip size...
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.8964234Z #14 4.869 dist-web/index.html                   0.61 kB │ gzip:  0.37 kB
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.8965327Z #14 4.869 dist-web/assets/index-DeRUFvgx.css   12.11 kB │ gzip:  3.42 kB
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.8966393Z #14 4.869 dist-web/assets/index-BVSso_5M.js   216.35 kB │ gzip: 68.47 kB
+verify	Run docker build -t loom:test .	2026-10-24T12:13:26.8967120Z #14 4.869 ✓ built in 1.13s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.2336847Z #14 5.357 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.2339374Z #14 5.357 up to date, audited 5 packages in 409ms
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3340857Z #14 5.359 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3341506Z #14 5.359 found 0 vulnerabilities
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3341996Z #14 DONE 5.4s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3342220Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3342808Z #15 [stage-1 3/8] COPY --from=build --chown=node:node /app/node_modules node_modules/
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3343545Z #15 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3343761Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3344680Z #16 [stage-1 4/8] COPY --from=build --chown=node:node /app/dist-node dist-node/
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.3345324Z #16 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4925819Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4927275Z #17 [stage-1 5/8] COPY --from=build --chown=node:node /app/dist-web dist-web/
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4929306Z #17 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4930045Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4930926Z #18 [stage-1 6/8] COPY --chown=node:node package.json ./
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4931695Z #18 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4931921Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4932616Z #19 [stage-1 7/8] COPY --chown=node:node docs/results/benchmark.json docs/results/benchmark.json
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4933424Z #19 DONE 0.0s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4933673Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4934083Z #20 [stage-1 8/8] RUN mkdir .cache && chown node:node .cache
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.4934572Z #20 DONE 0.1s
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.6449735Z 
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.6450661Z #21 exporting to image
+verify	Run docker build -t loom:test .	2026-10-24T12:13:27.6454821Z #21 exporting layers
+verify	Run docker build -t loom:test .	2026-10-24T12:13:28.2103740Z #21 exporting layers 0.7s done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:28.2288857Z #21 writing image sha256:3b49d7251e8e2a68c2621bd6708967b9f6e565379ea4589e81a4337da7be6490 done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:28.2292224Z #21 naming to docker.io/library/loom:test done
+verify	Run docker build -t loom:test .	2026-10-24T12:13:28.2292653Z #21 DONE 0.7s
+verify	Run node dist-node/scripts/container_smoke.js	﻿2026-10-24T12:13:28.2402902Z ##[group]Run node dist-node/scripts/container_smoke.js
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2403340Z ^[[36;1mnode dist-node/scripts/container_smoke.js^[[0m
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2475046Z shell: /usr/bin/bash -e {0}
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2475311Z env:
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2475583Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2476026Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2476479Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2476857Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2477240Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2477633Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:28.2478208Z ##[endgroup]
+verify	Run node dist-node/scripts/container_smoke.js	2026-10-24T12:13:29.6161560Z {"uid":1000,"static_ui_and_js":"pass","actual_ws_ack":"pass","competing_writer":"rejected","sigkill_and_container_recreation":"same acknowledged union from named volume","union_sha256":"d769103f9a5ddf9ff6c4b5b26dd9465ebdb09dd6105656029232de20d0f87d2b","scope":"actual Linux image and SQLite volume; process kill/recreation, not power-loss testing"}
+verify	Run python -m pip install -r requirements-browser.txt	﻿2026-10-24T12:13:29.7711730Z ##[group]Run python -m pip install -r requirements-browser.txt
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7712238Z ^[[36;1mpython -m pip install -r requirements-browser.txt^[[0m
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7776026Z shell: /usr/bin/bash -e {0}
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7776478Z env:
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7776752Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7777205Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7777638Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7778338Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7778746Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7779168Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:29.7779523Z ##[endgroup]
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.0997137Z Collecting playwright==1.64.0 (from -r requirements-browser.txt (line 1))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.1697250Z   Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl.metadata (3.3 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.5594835Z Collecting ruff==0.17.1 (from -r requirements-browser.txt (line 2))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.5698248Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.5993224Z Collecting pip-audit==2.9.0 (from -r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.6095125Z   Downloading pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.6373400Z Collecting pyee<15,>=13 (from playwright==1.64.0->-r requirements-browser.txt (line 1))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.6472467Z   Downloading pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.8101898Z Collecting greenlet<4.0.0,>=3.1.1 (from playwright==1.64.0->-r requirements-browser.txt (line 1))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.8203719Z   Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.8412255Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.8514099Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.8865768Z Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.8970900Z   Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.9190473Z Collecting packaging>=23.0.0 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.9289382Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.9485203Z Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.9584065Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.9783381Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:32.9885294Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.0169342Z Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.0270932Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.0649831Z Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.0753578Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.0951504Z Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.1053624Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.1325257Z Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.1426883Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.1652197Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.1755080Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.2034712Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.2136514Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.2399120Z Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.2501379Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.2730526Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.2830770Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.3039999Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.3139174Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.3343345Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.3441659Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.3719283Z Collecting typing-extensions (from pyee<15,>=13->playwright==1.64.0->-r requirements-browser.txt (line 1))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.3818491Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.4741474Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.4843950Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.5168865Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.5271060Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.5318653Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages (from pip-api>=0.0.28->pip-audit==2.9.0->-r requirements-browser.txt (line 3)) (26.2.1)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.5599403Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.5700126Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.7087270Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.7192510Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.7450816Z Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.7552166Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.7843451Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.7947155Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.8203159Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.8304651Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.8540350Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.8641893Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.8920267Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.9020442Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.9211456Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-browser.txt (line 3))
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.9314867Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:33.9521242Z Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl (48.3 MB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.1701262Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.3/48.3 MB 243.2 MB/s  0:00:00
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.1808400Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2139558Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 332.9 MB/s  0:00:00
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2239863Z Downloading pip_audit-2.9.0-py3-none-any.whl (58 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2359868Z Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2486908Z Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (623 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2535019Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 623.8/623.8 kB 139.4 MB/s  0:00:00
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2636721Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2761193Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2877352Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.2996961Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3120278Z Downloading pyee-14.0.0-py3-none-any.whl (15 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3240502Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3361212Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3477133Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3596450Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3724092Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3845769Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.3966793Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4087503Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4206061Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4325830Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4450678Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4574218Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4695705Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4816771Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.4939218Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5073014Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5137591Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 240.9 MB/s  0:00:00
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5236143Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5357032Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5473623Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5593075Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.5718293Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:34.8479324Z Installing collected packages: sortedcontainers, boolean.py, urllib3, typing-extensions, toml, ruff, pyparsing, pygments, platformdirs, pip-api, packaging, packageurl-python, msgpack, mdurl, license-expression, idna, greenlet, filelock, defusedxml, charset_normalizer, certifi, requests, pyee, py-serializable, pip-requirements-parser, markdown-it-py, rich, playwright, cyclonedx-python-lib, CacheControl, pip-audit
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:37.7787030Z 
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:37.7825488Z Successfully installed CacheControl-0.14.4 boolean.py-5.0 certifi-2026.10.23 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 greenlet-3.5.6 idna-3.20 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 playwright-1.64.0 py-serializable-2.1.0 pyee-14.0.0 pygments-2.21.0 pyparsing-3.3.3 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 typing-extensions-4.16.0 urllib3-2.8.0
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:37.7832653Z 
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:37.7833260Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+verify	Run python -m pip install -r requirements-browser.txt	2026-10-24T12:13:37.7834091Z [notice] To update, run: pip install --upgrade pip
+verify	Run ruff check scripts && ruff format --check scripts	﻿2026-10-24T12:13:37.9006843Z ##[group]Run ruff check scripts && ruff format --check scripts
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9007360Z ^[[36;1mruff check scripts && ruff format --check scripts^[[0m
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9070145Z shell: /usr/bin/bash -e {0}
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9070402Z env:
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9070673Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9071126Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9071573Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9071952Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9072345Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9072748Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9073083Z ##[endgroup]
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9241739Z All checks passed!
+verify	Run ruff check scripts && ruff format --check scripts	2026-10-24T12:13:37.9320101Z 2 files already formatted
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	﻿2026-10-24T12:13:37.9371085Z ##[group]Run python -m pip_audit -r requirements-browser.txt --progress-spinner off
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9371737Z ^[[36;1mpython -m pip_audit -r requirements-browser.txt --progress-spinner off^[[0m
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9434560Z shell: /usr/bin/bash -e {0}
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9434817Z env:
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9435088Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9435537Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9435993Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9436373Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9436754Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9437139Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:37.9437459Z ##[endgroup]
+verify	Run python -m pip_audit -r requirements-browser.txt --progress-spinner off	2026-10-24T12:13:45.3176046Z No known vulnerabilities found
+verify	Run python -m playwright install --with-deps chromium ffmpeg	﻿2026-10-24T12:13:45.3660614Z ##[group]Run python -m playwright install --with-deps chromium ffmpeg
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3661168Z ^[[36;1mpython -m playwright install --with-deps chromium ffmpeg^[[0m
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3725348Z shell: /usr/bin/bash -e {0}
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3725686Z env:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3725950Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3726405Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3726835Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3727223Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3727610Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3728142Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.3728466Z ##[endgroup]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.7360305Z Installing dependencies...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.7423581Z Switching to root user to install dependencies...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.8208484Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.8552406Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.8559915Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.8570734Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.8618837Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.8643010Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:45.9921128Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [589 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0079605Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [652 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0130487Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.4 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0419809Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1400 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0507438Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [310 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0519316Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1706 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0595899Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [342 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0619614Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1805 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.0719786Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [411 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.1567574Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1146 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.1625004Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [231 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.1674688Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1222 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.1733884Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [246 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.2188947Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1713 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:46.2292537Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [392 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:49.2943972Z Fetched 12.6 MB in 1s (9959 kB/s)
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.3116489Z Reading package lists...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.3354868Z Reading package lists...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.5385733Z Building dependency tree...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.5393890Z Reading state information...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6942958Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6943809Z libasound2t64 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6944744Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6945611Z libatk-bridge2.0-0t64 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6946398Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6947680Z libatk1.0-0t64 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6948820Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6949608Z libatspi2.0-0t64 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6950338Z libcairo2 is already the newest version (1.18.0-3build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6951041Z libcairo2 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6951857Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6952592Z libcups2t64 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6953429Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6954178Z libdbus-1-3 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6955010Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6955717Z libdrm2 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6956415Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.4).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6957067Z libgbm1 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6957704Z libnspr4 is already the newest version (2:4.35-1.1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6958435Z libnspr4 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6958881Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6959322Z libpango-1.0-0 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6959734Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6960331Z libx11-6 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6961028Z libxcb1 is already the newest version (1.15-1ubuntu2).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6961405Z libxcb1 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6961832Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6962257Z libxcomposite1 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6962679Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6963067Z libxdamage1 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6963453Z libxext6 is already the newest version (2:1.3.4-1build2).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6963822Z libxext6 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6964202Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6964576Z libxfixes3 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6964965Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6965356Z libxkbcommon0 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6965762Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6966146Z libxrandr2 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6966642Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6967202Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6967612Z libfontconfig1 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6968300Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6968731Z libfreetype6 set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6969146Z fonts-liberation is already the newest version (1:2.1.5-3).
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6969550Z fonts-liberation set to manually installed.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6969946Z The following additional packages will be installed:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6970396Z   gir1.2-glib-2.0 libglib2.0-bin libglib2.0-data libnss3-tools
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6970797Z   xfonts-encodings xfonts-utils xserver-common
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6971114Z Suggested packages:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6971346Z   low-memory-monitor
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6971623Z Recommended packages:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.6971929Z   fonts-ipafont-mincho fonts-tlwg-loma xfonts-base
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7227074Z The following NEW packages will be installed:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7228334Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7234866Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7235551Z   xfonts-utils
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7239513Z The following packages will be upgraded:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7241529Z   gir1.2-glib-2.0 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libnss3
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7246709Z   libnss3-tools xserver-common xvfb
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7424611Z 8 upgraded, 9 newly installed, 0 to remove and 91 not upgraded.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7425138Z Need to get 25.9 MB of archives.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7425594Z After this operation, 79.5 MB of additional disk space will be used.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.7426453Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:50.8298591Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.0345633Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-data all 2.80.0-6ubuntu3.10 [50.2 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.1017815Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-bin amd64 2.80.0-6ubuntu3.10 [97.9 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.1695264Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 gir1.2-glib-2.0 amd64 2.80.0-6ubuntu3.10 [183 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.2433733Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-0t64 amd64 2.80.0-6ubuntu3.10 [1548 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.3392397Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.5249906Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.5944948Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.7450518Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:51.9694304Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3 amd64 2:3.98-1ubuntu0.3 [1445 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.0778697Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3-tools amd64 2:3.98-1ubuntu0.3 [615 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.1566060Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.2329426Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.2983575Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.3825894Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.4576858Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 xserver-common all 2:21.1.12-1ubuntu1.9 [35.0 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.5237236Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 xvfb amd64 2:21.1.12-1ubuntu1.9 [877 kB]
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8180250Z Fetched 25.9 MB in 2s (14.2 MB/s)
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8429081Z Selecting previously unselected package fonts-ipafont-gothic.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8796793Z (Reading database ... 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8797325Z (Reading database ... 5%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8798133Z (Reading database ... 10%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8798512Z (Reading database ... 15%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8798828Z (Reading database ... 20%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8799131Z (Reading database ... 25%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8799418Z (Reading database ... 30%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8799707Z (Reading database ... 35%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8799987Z (Reading database ... 40%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8800288Z (Reading database ... 45%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8800576Z (Reading database ... 50%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.8849566Z (Reading database ... 55%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:52.9874496Z (Reading database ... 60%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.1396644Z (Reading database ... 65%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.3433469Z (Reading database ... 70%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.5262777Z (Reading database ... 75%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.6368420Z (Reading database ... 80%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.7438954Z (Reading database ... 85%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.8617160Z (Reading database ... 90%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.9656520Z (Reading database ... 95%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.9657071Z (Reading database ... 100%
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.9657841Z (Reading database ... 203540 files and directories currently installed.)
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.9700999Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:53.9790978Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.2144932Z Preparing to unpack .../01-libglib2.0-data_2.80.0-6ubuntu3.10_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.2162131Z Unpacking libglib2.0-data (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.2483921Z Preparing to unpack .../02-libglib2.0-bin_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.2502133Z Unpacking libglib2.0-bin (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.2983262Z Preparing to unpack .../03-gir1.2-glib-2.0_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.3015828Z Unpacking gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.3390417Z Preparing to unpack .../04-libglib2.0-0t64_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.3455252Z Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.3880803Z Selecting previously unselected package fonts-freefont-ttf.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.4010230Z Preparing to unpack .../05-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.4016645Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.4807485Z Selecting previously unselected package fonts-tlwg-loma-otf.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.4930878Z Preparing to unpack .../06-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.4937367Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.5131617Z Selecting previously unselected package fonts-unifont.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.5255304Z Preparing to unpack .../07-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.5262085Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.6307451Z Selecting previously unselected package fonts-wqy-zenhei.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.6431800Z Preparing to unpack .../08-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:54.6532584Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.1234814Z Preparing to unpack .../09-libnss3_2%3a3.98-1ubuntu0.3_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.1255881Z Unpacking libnss3:amd64 (2:3.98-1ubuntu0.3) over (2:3.98-1ubuntu0.2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.1731996Z Preparing to unpack .../10-libnss3-tools_2%3a3.98-1ubuntu0.3_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.1750249Z Unpacking libnss3-tools (2:3.98-1ubuntu0.3) over (2:3.98-1ubuntu0.2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2134830Z Selecting previously unselected package xfonts-encodings.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2262191Z Preparing to unpack .../11-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2268788Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2539741Z Selecting previously unselected package xfonts-utils.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2664188Z Preparing to unpack .../12-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2670208Z Unpacking xfonts-utils (1:7.7+6build3) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.2995345Z Selecting previously unselected package xfonts-cyrillic.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3121602Z Preparing to unpack .../13-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3129836Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3465208Z Selecting previously unselected package xfonts-scalable.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3592760Z Preparing to unpack .../14-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3600707Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3958503Z Preparing to unpack .../15-xserver-common_2%3a21.1.12-1ubuntu1.9_all.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.3976242Z Unpacking xserver-common (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.8) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.4362959Z Preparing to unpack .../16-xvfb_2%3a21.1.12-1ubuntu1.9_amd64.deb ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.4381376Z Unpacking xvfb (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.8) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.4918487Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5031743Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5049125Z Setting up libnss3:amd64 (2:3.98-1ubuntu0.3) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5066816Z Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5186645Z Setting up libglib2.0-data (2.80.0-6ubuntu3.10) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5204657Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5221591Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5239219Z Setting up gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5256268Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5320123Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5334069Z Setting up xserver-common (2:21.1.12-1ubuntu1.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5350391Z Setting up libnss3-tools (2:3.98-1ubuntu0.3) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5367077Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5383738Z Setting up xvfb (2:21.1.12-1ubuntu1.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5401522Z Setting up libglib2.0-bin (2.80.0-6ubuntu3.10) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5417705Z Setting up xfonts-utils (1:7.7+6build3) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5455551Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.5756754Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.6029420Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.6389914Z Processing triggers for man-db (2.12.0-4build2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.6411937Z Not building database; man-db/auto-update is not 'true'.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:55.6425245Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.3132934Z 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.3133720Z Running kernel seems to be up-to-date.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.3134123Z 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.3596828Z Restarting services...
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.3597455Z  systemctl restart packagekit.service php8.3-fpm.service polkit.service udisks2.service
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.4998912Z 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.4999519Z Service restarts being deferred:
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5000013Z  systemctl restart ModemManager.service
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5000410Z  systemctl restart networkd-dispatcher.service
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5000702Z 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5009246Z No containers need to be restarted.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5009715Z 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5010535Z No user sessions are running outdated binaries.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5012207Z 
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:56.5012753Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:57.4863964Z Downloading Chrome for Testing 156.0.8078.4 (playwright chromium v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-linux64.zip
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:57.9295925Z |                                                                                |   0% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.1332546Z |■■■■■■■■                                                                        |  10% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.2286174Z |■■■■■■■■■■■■■■■■                                                                |  20% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.3403891Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.4076480Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.4866485Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.5708923Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.6552810Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.7443284Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.8275744Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:13:58.8979796Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 191.1 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.1667357Z Chrome for Testing 156.0.8078.4 (playwright chromium v1248) downloaded to /home/runner/.cache/ms-playwright/chromium-1248
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.1672346Z Downloading FFmpeg (playwright ffmpeg v1013) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-linux.zip
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5627300Z |                                                                                |   0% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5675163Z |■■■■■■■■                                                                        |  10% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5698480Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5724193Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5741767Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5756753Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5777536Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5796800Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5812352Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5826670Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.5840704Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.6469976Z FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:02.6474393Z Downloading Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-headless-shell-linux64.zip
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.0995583Z |                                                                                |   0% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.2565261Z |■■■■■■■■                                                                        |  10% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.3323006Z |■■■■■■■■■■■■■■■■                                                                |  20% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.3941805Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.4680225Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.5137874Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.5597074Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.6265765Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.6716221Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.7119303Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:03.7691359Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 120 MiB
+verify	Run python -m playwright install --with-deps chromium ffmpeg	2026-10-24T12:14:06.1081486Z Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1248
+verify	Run python scripts/review.py	﻿2026-10-24T12:14:06.1330901Z ##[group]Run python scripts/review.py
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1331267Z ^[[36;1mpython scripts/review.py^[[0m
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1393712Z shell: /usr/bin/bash -e {0}
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1393969Z env:
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1394237Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1394702Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1395149Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1395548Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1395951Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1396346Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python scripts/review.py	2026-10-24T12:14:06.1396671Z ##[endgroup]
+verify	Run python scripts/review.py	2026-10-24T12:14:09.7970219Z stage: offline page reload
+verify	Run python scripts/review.py	2026-10-24T12:14:09.8998238Z stage: restore WebSocket frames
+verify	Run python scripts/review.py	2026-10-24T12:14:16.7206622Z stage: offline merge passed
+verify	Run python scripts/review.py	2026-10-24T12:14:18.2129415Z {"elapsed_seconds": 9.809704388, "receipts": 13, "page_errors": []}
+verify	Run actions/upload-artifact@v4	﻿2026-10-24T12:14:18.2474668Z ##[group]Run actions/upload-artifact@v4
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2474984Z with:
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2475189Z   name: loom-runtime-evidence
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2475433Z   path: docs/results/
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2475652Z   if-no-files-found: warn
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2475888Z   compression-level: 6
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2476101Z   overwrite: false
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2476314Z   include-hidden-files: false
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2476542Z env:
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2476793Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2477242Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2477681Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2478378Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2478785Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2479190Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.2479522Z ##[endgroup]
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.4153669Z (node:4559) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.4155218Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.4263151Z With the provided path, there will be 16 files uploaded
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.4268889Z Artifact name is valid!
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.4270048Z Root directory input is valid!
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.7608324Z Beginning upload of artifact content to blob storage
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:18.8162604Z (node:4559) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.2017788Z Uploaded bytes 409471
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.2591598Z Finished uploading artifact content to blob storage!
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.2593024Z SHA256 digest of uploaded artifact zip is 127445d81d511a28a63a34106a914191425c1b8ecf672ba6091ffcd5c133338e
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.2594484Z Finalizing artifact upload
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.7036164Z Artifact loom-runtime-evidence.zip successfully finalized. Artifact ID 12560270166
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.7037352Z Artifact loom-runtime-evidence has been successfully uploaded! Final size is 409471 bytes. Artifact ID is 12560270166
+verify	Run actions/upload-artifact@v4	2026-10-24T12:14:19.7045250Z Artifact download URL: https://github.com/rjrddy/loom/actions/runs/40093000208/artifacts/12560270166
+verify	Post Run actions/setup-python@v5	﻿2026-10-24T12:14:19.7236008Z Post job cleanup.
+verify	Post Run actions/setup-python@v5	2026-10-24T12:14:19.8453653Z (node:4572) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-python@v5	2026-10-24T12:14:19.8454607Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-node@v4	﻿2026-10-24T12:14:19.8613363Z Post job cleanup.
+verify	Post Run actions/setup-node@v4	2026-10-24T12:14:19.9977312Z (node:4580) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-node@v4	2026-10-24T12:14:19.9979483Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/checkout@v4	﻿2026-10-24T12:14:20.0182083Z Post job cleanup.
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1086666Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1130241Z git version 2.55.0
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1174599Z Temporarily overriding HOME='/home/runner/work/_temp/4d5ece45-486d-46c8-943d-2ed3c7a325bc' before making global git config changes
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1176497Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1181440Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/loom/loom
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1228981Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1273751Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1584381Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1622617Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1636949Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1675364Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1948656Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@v4	2026-10-24T12:14:20.1989473Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-10-24T12:14:20.2401014Z Cleaning up orphan processes
+verify	Complete job	2026-10-24T12:14:20.2799279Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

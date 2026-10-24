@@ -1,0 +1,221 @@
+{
+  "elapsed_seconds": 93.18654612498358,
+  "receipts": [
+    {
+      "kind": "focused-draft-retains-unseen-remote-insertion"
+    },
+    {
+      "kind": "pending-offline-edits-survive-actual-page-reload"
+    },
+    {
+      "kind": "actual-offline-edits-and-reconnect-converge"
+    },
+    {
+      "kind": "actual-LWW-card-update-propagates"
+    },
+    {
+      "kind": "actual-pointer-drag-converges"
+    },
+    {
+      "kind": "actual-remote-presence-cursor"
+    },
+    {
+      "kind": "actual-add-and-tombstone-card"
+    },
+    {
+      "kind": "responsive",
+      "width": 390,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 768,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1024,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1600,
+      "no_overflow": true
+    },
+    {
+      "kind": "actual-read-only-viewer"
+    },
+    {
+      "kind": "bad-token-rejected-and-recovered"
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 0
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 1
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 2
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 3
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 4
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 5
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 6
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 7
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 8
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 9
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 10
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 11
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 12
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 13
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 14
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 15
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 16
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 17
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 18
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 19
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 20
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 21
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 22
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 23
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 24
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 25
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 26
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 27
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 28
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 29
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 30
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 31
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 32
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 33
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 34
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 35
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 36
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 37
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 38
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 39
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 40
+    },
+    {
+      "kind": "recorded-offline-merge",
+      "step": 41
+    }
+  ],
+  "page_errors": []
+}

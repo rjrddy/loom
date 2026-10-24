@@ -1,0 +1,23 @@
+verify	Run python scripts/review.py	﻿2026-10-24T12:11:26.9140697Z ##[group]Run python scripts/review.py
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9141060Z ^[[36;1mpython scripts/review.py^[[0m
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9203814Z shell: /usr/bin/bash -e {0}
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9204081Z env:
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9204358Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9204803Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9205232Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9205608Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9205987Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9206368Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python scripts/review.py	2026-10-24T12:11:26.9206695Z ##[endgroup]
+verify	Run python scripts/review.py	2026-10-24T12:11:31.5497259Z stage: offline page reload
+verify	Run python scripts/review.py	2026-10-24T12:11:31.6624248Z stage: restore WebSocket frames
+verify	Run python scripts/review.py	2026-10-24T12:11:38.4785943Z stage: offline merge passed
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9366568Z Traceback (most recent call last):
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9370927Z   File "/home/runner/work/loom/loom/scripts/review.py", line 232, in <module>
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9371741Z     main()
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9371982Z     ~~~~^^
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9372464Z   File "/home/runner/work/loom/loom/scripts/review.py", line 201, in main
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9372983Z     assert not errors, errors
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9373300Z            ^^^^^^^^^^
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9373874Z AssertionError: ["Cannot set properties of null (setting 'onpointermove')"]
+verify	Run python scripts/review.py	2026-10-24T12:11:39.9667986Z ##[error]Process completed with exit code 1.

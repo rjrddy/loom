@@ -1,0 +1,30 @@
+npm ci
+
+added 26 packages, and audited 27 packages in 786ms
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm run build
+
+> loom-workspace@0.1.0 build
+> tsc -p tsconfig.node.json && tsc -p tsconfig.web.json && vite build
+
+vite v6.4.5 building for production...
+transforming...
+✓ 31 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-web/index.html                   0.61 kB │ gzip:  0.37 kB
+dist-web/assets/index-DeRUFvgx.css   12.11 kB │ gzip:  3.42 kB
+dist-web/assets/index-BVSso_5M.js   216.35 kB │ gzip: 68.34 kB
+✓ built in 422ms
+npm start
+
+> loom-workspace@0.1.0 start
+> node dist-node/src/server.js
+
+(node:76689) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"ready"}
