@@ -212,3 +212,58 @@ export function seed(): Op[] {
   }
   return r.all();
 }
+
+export type TextNode = { id: string; ch: string };
+/** Diff the text actually shown to the editor, not newer unseen remote characters. */
+export function editDraft(
+  r: Replica,
+  actor: string,
+  base: TextNode[],
+  next: string,
+): { nodes: TextNode[]; ops: Op[] } {
+  const before = base.map((n) => n.ch),
+    after = Array.from(next);
+  if (
+    after.length > 3000 ||
+    /[\u0000-\u0008\u000b-\u001f\u007f]/.test(next) ||
+    /[\ud800-\udfff]/u.test(next)
+  )
+    throw Error("invalid_text");
+  let prefix = 0;
+  while (
+    prefix < before.length &&
+    prefix < after.length &&
+    before[prefix] === after[prefix]
+  )
+    prefix++;
+  let suffix = 0;
+  while (
+    suffix < before.length - prefix &&
+    suffix < after.length - prefix &&
+    before[before.length - 1 - suffix] === after[after.length - 1 - suffix]
+  )
+    suffix++;
+  const removed = base.slice(prefix, before.length - suffix),
+    chars = after.slice(prefix, after.length - suffix),
+    needed = removed.length + chars.length;
+  if (r.ops.size + needed > MAX_OPS || r.clock + needed > 1e9)
+    throw Error("workspace_full");
+  const ops: Op[] = [],
+    inserted: TextNode[] = [];
+  for (const n of removed) ops.push(r.delete(actor, n.id));
+  let anchor = prefix ? base[prefix - 1].id : ROOT;
+  for (const ch of chars) {
+    const op = r.insert(actor, anchor, ch);
+    ops.push(op);
+    inserted.push({ id: op.id, ch });
+    anchor = op.id;
+  }
+  return {
+    nodes: [
+      ...base.slice(0, prefix),
+      ...inserted,
+      ...base.slice(before.length - suffix),
+    ],
+    ops,
+  };
+}

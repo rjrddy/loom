@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/rajreddy/dev/outreach/loom/scripts/review.py", line 145, in <module>
+    main()
+    ~~~~^^
+  File "/Users/rajreddy/dev/outreach/loom/scripts/review.py", line 57, in main
+    assert 'REMOTE' in final and 'LOCAL' in final, final
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: A small space for a shared idea.
+Edit together. Keep your own rhythm. LOCAL

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { Replica, ROOT, validate, type Op } from "../src/core.js";
+import { Replica, ROOT, validate, editDraft, type Op } from "../src/core.js";
 import { Store } from "../src/store.js";
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -142,4 +142,15 @@ test("SQLite dedupe, exclusive writer fencing and restart persistence", () => {
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
+});
+
+test("focused draft edits preserve unseen remote insertions", () => {
+  const a = new Replica();
+  a.insert("seed", ROOT, "A");
+  const base = a.visible();
+  a.insert("remote", base[0].id, "R");
+  const edit = editDraft(a, "local", base, "AL");
+  assert.equal(edit.nodes.map((n) => n.ch).join(""), "AL");
+  assert.ok(a.text().includes("R"));
+  assert.ok(a.text().includes("L"));
 });
