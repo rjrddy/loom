@@ -1,3 +1,4 @@
+import "./motion";
 import { ProofView, type Proof } from "./Proof.js";
 import { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";

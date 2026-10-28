@@ -35,6 +35,9 @@ make lint test bench
 
 ## Decisions and limits
 
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.
+
+
 - Own RGA-style character tree, permanent tombstones, deterministic Lamport/actor ordering and per-field LWW canvas registers. Unknown anchors/deletes wait safely for their referenced insertions. This is not Yjs/Automerge, a production Unicode/IME editor, rich text, undo or intention-preservation proof. [Design](docs/DESIGN.md), [ADRs](docs/adr/).
 - Convergence requires unique actors, nonconflicting IDs, operation capacity and eventual delivery. Permanent partitions cannot converge. The finite seeded campaign is evidence, not a universal proof. No tombstone garbage collection; the operation budget is explicit and exhaustion rejects rather than drops edits silently.
 - A real browser test caught deletion of an unseen remote insertion while a focused draft was being edited. Edits now use the character IDs actually displayed; leaving the field reveals the merged view. The original [failing run](docs/results/caught-focused-draft.log) is retained.

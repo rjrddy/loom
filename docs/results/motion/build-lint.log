@@ -1,0 +1,22 @@
+src/web/motion.ts 72ms
+src/web/main.tsx 45ms (unchanged)
+src/web/style.css 60ms (unchanged)
+
+> loom-workspace@0.1.0 lint
+> tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.web.json && prettier --check src scripts tests *.json *.ts index.html
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> loom-workspace@0.1.0 build
+> tsc -p tsconfig.node.json && tsc -p tsconfig.web.json && vite build
+
+vite v6.4.5 building for production...
+transforming...
+✓ 32 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-web/index.html                   0.61 kB │ gzip:  0.37 kB
+dist-web/assets/index-CJdbsbkR.css   12.22 kB │ gzip:  3.48 kB
+dist-web/assets/index-D6HOlPwe.js   219.93 kB │ gzip: 69.74 kB
+✓ built in 485ms

@@ -1,0 +1,17 @@
+{
+  "project": "loom",
+  "motion_profile": "Replica acknowledgement latch",
+  "source_sha256": {
+    "src/web/motion.ts": "09f60a4571b5ae7a52521cd2423313f39ae9c7341c68255991bf22bbfbfe5971",
+    "src/web/style.css": "940ddcfd9854eca4a1a0706d0676abb4e289c3a12df8732c31d5ae3b77cd48dd"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "passed",
+  "showcase_contract": "not applicable",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}

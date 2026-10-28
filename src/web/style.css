@@ -268,7 +268,6 @@ a {
   max-width: 220px;
   box-shadow: 1px 4px 6px #4a483814;
   transform: rotate(-2deg);
-  transition: background 0.15s;
 }
 .note:nth-child(even) {
   transform: rotate(2.5deg);
@@ -971,5 +970,16 @@ footer small {
   .trial-grid span {
     font-size: 8px;
     padding: 8px 0;
+  }
+}
+
+/* Motion is event-driven in motion.ts/js; resting content is always visible. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }

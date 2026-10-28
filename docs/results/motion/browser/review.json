@@ -1,0 +1,53 @@
+{
+  "elapsed_seconds": 9.960423999931663,
+  "receipts": [
+    {
+      "kind": "focused-draft-retains-unseen-remote-insertion"
+    },
+    {
+      "kind": "pending-offline-edits-survive-actual-page-reload"
+    },
+    {
+      "kind": "actual-offline-edits-and-reconnect-converge"
+    },
+    {
+      "kind": "actual-LWW-card-update-propagates"
+    },
+    {
+      "kind": "actual-pointer-drag-converges"
+    },
+    {
+      "kind": "actual-remote-presence-cursor"
+    },
+    {
+      "kind": "actual-add-and-tombstone-card"
+    },
+    {
+      "kind": "responsive",
+      "width": 390,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 768,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1024,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1600,
+      "no_overflow": true
+    },
+    {
+      "kind": "actual-read-only-viewer"
+    },
+    {
+      "kind": "bad-token-rejected-and-recovered"
+    }
+  ],
+  "page_errors": []
+}
