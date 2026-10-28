@@ -2,7 +2,7 @@
   "project": "loom",
   "motion_profile": "Replica acknowledgement latch",
   "source_sha256": {
-    "src/web/motion.ts": "09f60a4571b5ae7a52521cd2423313f39ae9c7341c68255991bf22bbfbfe5971",
+    "src/web/motion.ts": "e4d8f8c29fee1f2fb7c38f0b3de4c8806bc92a167321469b18b9d1e9549c558f",
     "src/web/style.css": "940ddcfd9854eca4a1a0706d0676abb4e289c3a12df8732c31d5ae3b77cd48dd"
   },
   "frontend_build_lint": "passed",

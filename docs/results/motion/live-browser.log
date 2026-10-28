@@ -1,4 +1,4 @@
 stage: offline page reload
 stage: restore WebSocket frames
 stage: offline merge passed
-{"elapsed_seconds": 9.960423999931663, "receipts": 13, "page_errors": []}
+{"elapsed_seconds": 9.736897499999031, "receipts": 13, "page_errors": []}

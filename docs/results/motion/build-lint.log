@@ -1,6 +1,6 @@
-src/web/motion.ts 72ms
-src/web/main.tsx 45ms (unchanged)
-src/web/style.css 60ms (unchanged)
+src/web/motion.ts 61ms
+src/web/main.tsx 39ms (unchanged)
+src/web/style.css 68ms (unchanged)
 
 > loom-workspace@0.1.0 lint
 > tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.web.json && prettier --check src scripts tests *.json *.ts index.html
@@ -16,7 +16,7 @@ transforming...
 ✓ 32 modules transformed.
 rendering chunks...
 computing gzip size...
-dist-web/index.html                   0.61 kB │ gzip:  0.37 kB
+dist-web/index.html                   0.61 kB │ gzip:  0.38 kB
 dist-web/assets/index-CJdbsbkR.css   12.22 kB │ gzip:  3.48 kB
-dist-web/assets/index-D6HOlPwe.js   219.93 kB │ gzip: 69.74 kB
-✓ built in 485ms
+dist-web/assets/index-DAEk219E.js   219.94 kB │ gzip: 69.76 kB
+✓ built in 563ms

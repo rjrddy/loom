@@ -22,7 +22,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 95.40000009536743
+      "at": 106.79999995231628
     },
     {
       "tag": "DIV",
@@ -46,7 +46,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 136.10000002384186
+      "at": 145.69999992847443
     },
     {
       "tag": "CODE",
@@ -66,7 +66,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 136.20000004768372
+      "at": 145.69999992847443
     },
     {
       "tag": "SPAN",
@@ -86,13 +86,14 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 136.20000004768372
+      "at": 145.69999992847443
     }
   ],
   "transformOpacityOnly": true,
   "zeroDelay": true,
   "immediatePointerAndKeyboard": true,
   "edgeClickTargetStableUntilActivation": true,
+  "immediateNeighborsOnly": true,
   "disabledAndEditorExcluded": true,
   "liveReducedMotionCancellation": true,
   "reEnable": true,
